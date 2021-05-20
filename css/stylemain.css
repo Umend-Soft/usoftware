@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background: White; 
+	font-family: "Arial";
+    font-size: 100%;
+    color: Black;
+	}
+	
+header {
+    font-family: "Arial";
+    font-size: 130%;
+    color: White;
+    background-color:#363636; 
+    padding:7px;
+    text-align: center;
+	}
+
+h1 {
+    font-family: "Arial";
+    font-size: 100%;
+    color: White;
+    background-color: #258F5D;
+    border-radius: 2px 2px 2px 2px;
+    padding:5px;
+    text-align: center;
+	}
+
+h2 {
+    font-family: "Arial";
+    font-size: 90%;
+    color: White;
+	background-color: #258F5D ;
+    border-radius: 2px 2px 2px 2px;
+    padding:5px;
+    text-align: center;
+	}
+
+div {
+    padding: 20px;
+	}
+
+img {
+    max-width: 100%;
+    height: auto;
+	}

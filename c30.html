@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c29.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c31.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 30. String - Replace</h1>
+				  
+				  
+<h2>JavaScript String Replace</h2>
+JavaScript's String Object has a handy function that lets you replace words that occur within the string. This comes in handy if you have a form letter with a default reference of "username". With the replace function you could grab get the person's name with an HTML form or JavaScript promptand then replace all occurrences of "username" with the value that they entered.<hr>
+
+
+<h2>String Replace Function</h2>
+The string <i>replace</i> function has two arguments:<hr>
+<ol>
+	<li>SearchFor - What word is going to be replaced.  This can be a string or a regular expression.</li>
+	<li>ReplaceText - What the word will be replaced with. This needs to be a string.</li>
+</ol>
+
+<i>replace</i> returns the new string with the replaces, but if there weren't any words to replace, then
+the original string is returned. <hr>
+
+<h2>Replace Function: String Replace</h2>
+To start off with, let's just search for a string and replace it with the visitor's name. The first argument is what we are searching for, and the second argument is what we are going to replace.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var visitorName = "Chuck";
+var myOldString = "Hello username! I hope you enjoy your stay username.";
+<font color='red'>var myNewString = myOldString.replace("username", visitorName);</font>
+
+document.write("Old string =  " + myOldString); 
+document.write("&lt;br /&gt;New string = " + myNewString);
+
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  Old string = Hello username! I hope you enjoy your stay username.
+  <br>New string = Hello Chuck! I hope you enjoy your stay username.
+</blockquote>
+
+Notice that only the first occurrence of "username" was replaced. This is the drawback to using a string as your <i>searchFor</i> argument. But don't worry you can replace all occurrences of "username" if you decide to use regular expressions.<hr>
+
+<h2>Replace Function: Regular Expression</h2>
+Let's do the exact same replace, except this time, we'll use a a regular expression instead of a string.  The only change we need to make is to surround our <i>searchFor</i> word with slashes / / instead of quotations " ".<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var visitorName = "Chuck";
+var myOldString = "Hello username! I hope you enjoy your stay username.";
+var myNewString = myOldString.replace(<font color='red'>/username/</font>, visitorName);
+
+document.write("Old string =  " + myOldString); 
+document.write("&lt;br /&gt;New string = " + myNewString);
+
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  Old string = Hello username! I hope you enjoy your stay username.
+  <br>New string = Hello Chuck! I hope you enjoy your stay username.
+</blockquote>
+
+Darn! No luck.  We've still only replaced the first "username" with Chuck instead of all of them.  What's the solution to our problem? The answer is enabling the global property for our regular expression.<hr>
+
+<h2>Replace Function: Global Regular Expression</h2>
+By enabling the global property of our regular expression, we can go from replacing one match at a time to replacing all matches at once.  To enable the global property, just put a "g" at the end of the regular expression.<hr>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var visitorName = "Chuck";
+var myOldString = "Hello username! I hope you enjoy your stay username.";
+var myNewString = myOldString.replace(/username/<font color='red'>g</font>, visitorName);
+
+document.write("Old string =  " + myOldString); 
+document.write("&lt;br /&gt;New string = " + myNewString);
+
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  Old string = Hello username! I hope you enjoy your stay username.
+  <br>New string = Hello Chuck! I hope you enjoy your stay Chuck.
+</blockquote>
+
+Finally we've succeeded! Remember that if you just want to replace one word, you should use a string or normal regular expression as your <i>searchFor</i> parameter.  However, if you want to replace everything, be sure to write a regular expression and append a little g at the end!
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

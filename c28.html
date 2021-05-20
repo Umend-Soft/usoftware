@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c27.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c29.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 28. String - Split</h1>
+				 
+				  
+<h2>JavaScript String Split Function</h2>
+The ability to split up a string into separate chunks has been supported in many programming languages, and it is available in JavaScript as well.  If you have a long string like "Bobby Susan Tracy Jack Phil Yannis" and want to store each name separately, you can specify the space character " " and have the <i>split</i> function create a new chunk every time it sees a space.<hr>
+
+
+<h2>Split Function: Delimiter</h2>
+The space character " " we mentioned will be our <i>delimiter</i> and it is used by the split function as a way of breaking up the string.  Every time it sees the <i>delimiter</i> we specified, it will create a new element in an array.  The first argument of the split function is the <i>delimiter</i>.<hr>
+
+<h2>Simple Split Function Example</h2>
+Let's start off with a little example that takes a string of numbers and splits when it sees the number 5.  That means the <i>delimiter</i> for this example is 5.  Notice that the <i>split</i> function returns an <a HREF="http://www.tizag.com/javascriptT/javascriptarray.php">array</a> that we store into <i>mySplitResult</i>.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var myString = "123456789";
+
+<font color='red'>var mySplitResult = myString.split("5");</font>
+
+document.write("The first element is " + mySplitResult[0]); 
+document.write("&lt;br /&gt; The second element is  " + mySplitResult[1]); 
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  The first element is 1234
+  <br>The second element is 6789
+</blockquote>
+
+Make sure you realize that because we chose the 5 to be our <i>delimiter</i>, it is not in our result.  This is because the <i>delimiter</i> is removed from the string and the remaining characters are separated by the chasm of space that the 5 used to occupy.<hr>
+
+<h2>Larger Split Function Example</h2>
+Below we have created a <i>split</i> example to illustrate how this function works with many splits.  We have created a string with numbered words zero through four.  The <i>delimiter</i> in this example will be the space character " ".<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var myString = "zero one two three four";
+
+<font color='red'>var mySplitResult = myString.split(" ");</font>
+
+for(i = 0; i &lt; mySplitResult.length; i++){
+	document.write("&lt;br /&gt; Element " + i + " = " + mySplitResult[i]); 
+}
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  Element 0 = zero
+  <br>Element 1 = one
+  <br>Element 2 = two
+  <br>Element 3 = three
+  <br>Element 4 = four
+</blockquote>
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

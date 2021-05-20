@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c33.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 34. Advanced - innerHTML</h1>
+				 
+<h2>JavaScript innerHTML</h2>
+Ever wonder how you could change the contents of an HTML element? Maybe you'd like to replace the text in a paragraph to reflect what a visitor has just selected from a drop down box. By manipulating an element's <i>innerHtml</i> you'll be able to change your text and HTML as much as you like.<hr>
+
+
+<h2>Changing Text with innerHTML</h2>
+Each HTML element has an <i>innerHTML</i> property that defines both the HTML code and the text that occurs between that element's opening and closing tag.  By changing an element's <i>innerHTML</i> after some user interaction, you can make much more interactive pages.<hr>
+
+However, using <i>innerHTML</i> requires some preparation if you want to be able to use it easily and reliably.  First, you must give the element you wish to change an id. With that <i>id</i> in place you will be able to use the <i>getElementById</i> function, which works on all browsers. <hr>
+
+After you have that set up you can now manipulate the text of an element.  To start off, let's try changing the text inside a bold tag.<hr>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+function changeText(){
+	<font color='red'>document.getElementById('boldStuff').innerHTML = 'Fred Flinstone';</font>
+}
+&lt;/script&gt;
+&lt;p&gt;Welcome to the site &lt;b id='boldStuff'&gt;dude&lt;/b&gt; &lt;/p&gt; 
+&lt;input type='button' onclick='changeText()' value='Change Text'/&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<script TYPE="text/javascript">
+function changeText(){
+	document.getElementById('boldStuff').innerHTML = 'Fred Flinstone';
+}
+</script>
+Welcome to the site <b ID="boldStuff">dude</b> <hr> 
+<INPUT  TYPE="button" ONCLICK="changeText()" VALUE="Change Text"/>
+</blockquote>
+
+You now know how to change the text in any HTML element, but what about changing the text in an element based on user input?  Well, if we combine the above knowledge with a text input...<hr>
+
+<h2>Updating Text Based on User Input</h2>
+By adding a Text Input, we can take to updating our bold text with whatever the user types into the text input. Note: We updated the function a bit and set the id to <i>boldStuff2</i>.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+function <font color='red'>changeText2</font>(){
+	<font color='red'>var userInput = document.getElementById('userInput').value;</font>
+	document.getElementById('<font color='red'>boldStuff2</font>').innerHTML = <font color='red'>userInput</font>;
+}
+&lt;/script&gt;
+&lt;p&gt;Welcome to the site &lt;b id='<font color='red'>boldStuff2</font>'&gt;dude&lt;/b&gt; &lt;/p&gt; 
+<font color='red'>&lt;input type='text' id='userInput' value='Enter Text Here' /&gt;</font>
+&lt;input type='button' onclick='<font color='red'>changeText2</font>()' value='Change Text'/&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<script TYPE="text/javascript">
+function changeText2(){
+	var userInput = document.getElementById('userInput').value;
+	document.getElementById('boldStuff2').innerHTML = userInput;
+}
+</script>
+Welcome to the site <b ID="boldStuff2">dude</b> <hr> 
+<INPUT  TYPE="text" ID="userInput" VALUE="Enter Text Here"/>
+<INPUT  TYPE="button" ONCLICK="changeText2()" VALUE="Change Text"/>
+</blockquote>
+
+<h2>Changing HTML with innerHTML</h2>
+You can also insert HTML into your elements in the exact same way.  Let's say we didn't like the text that was displayed in our paragraph and wanted to updated it with some color.  The following code will take the old black text and make it bright white.  The only thing we're doing different here is inserting the html element <i>span</i> to change the color.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+function <font color='red'>changeText3</font>(){
+	var oldHTML = document.getElementById('para').innerHTML;
+	<font color='red'>var newHTML = "&lt;span style='color:#ffffff'&gt;" + oldHTML + "&lt;/span&gt;";</font>
+	document.getElementById('para').innerHTML = newHTML;
+}
+&lt;/script&gt;
+&lt;p id='<font color='red'>para</font>'&gt;Welcome to the site &lt;b id='<font color='red'>boldStuff3</font>'&gt;dude&lt;/b&gt; &lt;/p&gt; 
+&lt;input type='button' onclick='<font color='red'>changeText3</font>()' value='Change Text'/&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<script TYPE="text/javascript">
+function changeText3(){
+	var oldHTML = document.getElementById('para').innerHTML;
+	var newHTML = "<span style='color:#ffffff'>" + oldHTML + "</span>";
+	document.getElementById('para').innerHTML = newHTML;
+}
+</script>
+<p ID="para">Welcome to the site <b ID="boldStuff3">dude</b> <hr> 
+<INPUT  TYPE="button" ONCLICK="changeText3()" VALUE="Change Text"/>
+</blockquote>
+
+This was a pretty simple example for changing the HTML of an element.  All we did was take the old text that was in the <i>paragraph</i> tag and surround it in a <i>span</i> tag to change the color.  However, there are many more things you can do by changing an element's HTML, so don't forget this useful tool!
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

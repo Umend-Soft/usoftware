@@ -1,0 +1,263 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b13.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b15.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 14. Page Layout</h1>
+				 
+				  
+<h2>Page Layout</h2>
+
+<div> with <abbr title="Cascading Style Sheets">CSS</abbr> is easy. If you are used to laying out a page with tables, it may at first appear difficult, but it isn't, it's just different and actually makes much more sense.<hr><br>
+
+You need to look at each part of the page as an individual chunk that you can shove wherever you choose. You can place these chunks absolutely or relative to another chunk.<hr><br>
+</div>
+
+		
+
+
+
+
+
+
+<h2 id="c1">Positioning</h2>
+
+The <code>position</code> property is used to define whether an element is <code>absolute</code>, <code>relative</code>, <code>static</code> or 
+<code>fixed</code>.<hr><br>
+
+The value <code>static</code> is the default value for elements and renders the position in the normal order of things, 
+as they appear in the <abbr title="HyperText Markup Language">HTML</abbr>.<hr><br>
+
+<code>relative</code> is much like <code>static</code>, but the element can be offset from its original position with the properties
+<code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code>.<hr><br>
+
+<code>absolute</code> pulls an element out of the normal flow of the HTML and delivers it to a world all of its own. 
+In this crazy little world, the absolute element can be placed anywhere on the page using <code>top</code>, ><code>right</code>, 
+<code>bottom</code> and <code>left</code>.<hr><br>
+
+<code>fixed</code> behaves like <code>absolute</code>, but it will absolutely position an element in reference to the browser
+ <strong>window</strong> as opposed to the web <strong>page</strong>, so, theoretically, 
+ fixed elements should stay exactly where they are on the screen even when the page is scrolled. 
+ Why theoretically? Why else - this works great in browsers such as Mozilla and Opera, but in <abbr title="Internet Explorer">IE</abbr> 
+ it doesn't work at all.<hr><br>
+
+
+
+<h2>Layout using absolute positioning</h2>
+
+You can create a traditional two-column layout with absolute positioning if you have something like the following HTML:<hr><br>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<pre><code class="html">
+
+&lt;div id="navigation"&gt;
+
+	&lt;ul&gt;
+
+		&lt;li&gt;&lt;a href="this.html"&gt;This&lt;/a&gt;&lt;/li&gt;
+
+		&lt;li&gt;&lt;a href="that.html"&gt;That&lt;/a&gt;&lt;/li&gt;
+
+		&lt;li&gt;&lt;a href="theOther.html"&gt;The Other&lt;/a&gt;&lt;/li&gt;
+
+	&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div id="content"&gt;
+
+	&lt;h1&gt;Ra ra banjo banjo&lt;/h1&gt;
+
+	&lt;p&gt;Welcome to the Ra ra banjo banjo page. Ra ra banjo banjo. Ra ra banjo banjo. Ra ra banjo banjo.&lt;/p&gt;
+
+	&lt;p&gt;(Ra ra banjo banjo)&lt;/p&gt;
+
+&lt;/div&gt;
+
+</code></pre>
+</blockquote>
+
+And if you apply the following CSS:<hr><br>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<pre><code class="css">
+
+#navigation {
+
+	<strong>position: absolute;</strong>
+
+	<strong>top: 0;</strong>
+
+	<strong>left: 0;</strong>
+
+	width: 10em;
+
+}
+
+
+
+#content {
+
+	margin-left: 10em;
+
+}
+
+</code></pre>
+</blockquote>
+
+
+You will see that this will set the navigation bar to the left and set the width to 10 em's. Because the navigation is absolutely positioned, it has nothing to do with the flow of the rest of the page, so all that is needed is to set the left margin of the content area to be equal to the width of the navigation bar.<hr><br>
+
+
+
+How bloody easy. And you aren't limited to this two-column approach. With clever positioning, you can arrange as many blocks as you like. If you wanted to add a third column, for example, you could add a 'navigation2' chunk to the HTML and change the CSS to: <hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+#navigation {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	width: 10em;
+
+}
+
+
+
+#navigation2 {
+
+	position: absolute;
+
+	top: 0;
+
+	<strong>right: 0;</strong>
+
+	width: 10em;
+
+}
+
+
+
+#content {
+
+	margin: 0 10em; /* setting top and bottom margin to 0 and right and left margin to 10em */
+
+}
+
+</code></pre>
+
+</blockquote>
+
+The only downside to absolutely positioned elements is that because they live in a world of their own, 
+there is no way of accurately determining where they end. If you were to use the examples above and all of your pages had small navigation 
+bars and large content areas, you would be okay, but, especially when using relative values for widths and sizes, you often have to abandon any 
+hope of placing anything, such as a footer, below these elements. If you wanted to do such a thing, it would be necessary to float your chunks,
+ rather than absolutely positioning them.<hr><br>
+
+
+
+<h2>Floating</h2>
+
+Floating an element will shift it to the right or left of a line, with surrounding content flowing around it.<hr><br>
+
+Floating is normally used to position smaller elements within a page (in the original default CSS for this site<hr><br>
+
+Taking the HTML example below, you could apply the following CSS:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+#navigation {
+
+	<strong>float: left;</strong>
+
+	width: 10em;
+
+}
+
+
+
+#navigation2 {
+
+	<strong>float: right;</strong>
+
+	width: 10em;
+
+}
+
+
+
+#content {
+
+	margin: 0 10em;
+
+}
+
+</code></pre>
+
+</blockquote>
+
+If you do not want the next element to wrap around the floating objects, you can apply the clear property. clear: left will clear left floated elements, clear: right will clear right floated elements and clear: both will clear both left and right floated elements. So if, for example, you wanted a footer to your page, you could add a chunk of HTML with the id 'footer' and then add the following CSS:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+#footer {
+
+	<strong>clear: both;</strong>
+
+}
+
+</code></pre>
+
+</blockquote>
+
+And there you have it. A footer that will appear underneath all columns, regardless of the length of any of them.<hr><br>
+
+
+
+This has been a general introduction to positioning and floating, with emphasis to the larger 'chunks' of a page, but remember, these methods can be applied to any element within those chunks too. With a combination of positioning, floating, margins, padding and borders, you should be able to represent ANY web design and there is nothing that can be done in tables that can not be done with CSS.<hr><br>
+
+The ONLY reason for using tables for layout at all is if you are trying to accommodate ancient browsers. This is where CSS really shows its advantages - it results in a highly accessible page a fraction of the weight of an equivalent table-based page.
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

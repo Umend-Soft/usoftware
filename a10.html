@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style.css" />
+  </head> 
+  <body> 
+	<header>Learn HTML</header>
+
+	<div>
+
+	<a href="a9.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="a.html"><img src="icon/a.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="a11.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Html - 10. Styles</h1>
+				  
+<h2>CSS Introduction</h2>
+It is time to take your web designing skills to the next level with <b>C</b>ascading <b>S</b>tyle <b>S</b>heets (CSS). They are a way to control the look and feel of your HTML documents in an organized and efficient manner.  With CSS you will be able to:
+<ul>
+	<li>Add new looks to your old HTML</li>
+	<li>Completely restyle a web site with only a few changes to your CSS code</li>
+	<li>Use the "style" you create on any webpage you wish!</li>
+</ul>
+<hr>
+
+
+A stylesheet can, and should be, completely separate from your HTML documents.  When you have mastered CSS and HTML, you will be able to separate your web site's design and formatting (CSS) from the content (HTML).  
+<hr>
+
+
+<h1>Intended Audience</h1>
+Before you begin the CSS Tutorial we suggest that you
+check to see you meet the following recommendations:<hr>
+
+<ul>
+	<li>You have used HTML in the past</li>
+	<li>You know the basic HTML tags and vocabulary.</li>
+	<li>You want to be a better web designer!</li>
+</ul>
+CSS is used to style HTML elements.<hr>
+
+
+<hr />
+
+<table width="100%" border="0" cellspacing="0" cellpadding="8"><tr>
+<td style="font-size:120%;border:2px ridge;background-color:#e5eecc;">
+<h2>Look! Styles and colors</h2>
+<p style="font-family:verdana;color:red">This text is in Verdana and red<hr>
+
+<p style="font-family:times;color:blue">This text is in Times and blue<hr>
+
+<p style="font-size:30px">This text is 30 pixels high<hr>
+
+</td></tr></table>
+<hr>
+<h2>Styling HTML with CSS</h2>
+CSS was introduced together with HTML 4, to provide a better way to style HTML elements.<hr>
+
+CSS can be added to HTML in the following ways:<hr>
+
+<ul>
+	<li>in <b>Cascading Style Sheet files</b> (CSS files)</li>
+	<li>in the <b>&lt;style&gt; element</b> in the HTML head section</li>
+	<li>in the <b>style attribute</b> in single HTML elements</li>
+</ul>
+
+<hr />
+
+<h2>Using the HTML Style Attribute</h2>
+
+It is time consuming and not very practical to style HTML elements using the 
+style attribute.<hr>
+
+<b>The preferred way to add CSS to HTML, is to put CSS syntax in separate CSS 
+files.</b><hr>
+
+However, in this HTML tutorial we will introduce you to CSS using the style attribute. 
+This is done to simplify the examples. It also makes it easier for you to edit 
+the code and try it yourself. <hr>
+
+
+
+
+<hr />
+
+<h2>HTML Style Example - Background Color</h2>
+The background-color property defines the background color for an element:<hr>
+
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;html&gt;<br /><br />
+&lt;body style=&quot;background-color:yellow;&quot;&gt;<br />
+&lt;h2 style=&quot;background-color:red;&quot;&gt;This is a heading&lt;/h2&gt;<br />
+&lt;p style=&quot;background-color:green;&quot;&gt;This is a paragraph.&lt;/p&gt;<br />
+&lt;/body&gt;<br /><br />
+&lt;/html&gt;
+</blockquote>
+The background-color property makes the &quot;old&quot; bgcolor attribute obsolete.<hr>
+
+<hr />
+
+<h2>HTML Style Example - Font, Color and Size</h2>
+The font-family, color, and font-size properties defines the font, color, and size of the text in an element:<hr>
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;html&gt;<br /><br />
+&lt;body&gt;<br />
+&lt;h1 style=&quot;font-family:verdana;&quot;&gt;A heading&lt;/h1&gt;<br />
+&lt;p style=&quot;font-family:arial;color:red;font-size:20px;&quot;&gt;A paragraph.&lt;/p&gt;<br />
+&lt;/body&gt;<br /><br />
+&lt;/html&gt;
+</blockquote>
+
+The font-family, color, and font-size properties make the old &lt;font&gt; tag obsolete.<hr>
+
+<hr />
+
+<h2>HTML Style Example - Text Alignment</h2>
+The text-align property specifies the horizontal alignment of text in an 
+element:<hr>
+
+
+<div class="example">
+<h2 class="example">Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;html&gt;<br /><br />
+&lt;body&gt;<br />
+&lt;h1 style=&quot;text-align:center;&quot;&gt;Center-aligned heading&lt;/h1&gt;<br />
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br />
+&lt;/body&gt;<br /><br />
+&lt;/html&gt;
+</blockquote></div>
+
+
+The text-align property makes the old &lt;center&gt; tag obsolete.<hr>
+
+
+Centered heading the old way
+<hr />
+
+<h2>Deprecated Tags and Attributes</h2>
+In HTML 4, several tags and attributes were deprecated. Deprecated means that they will not be supported in future versions of HTML.<hr>
+
+<b>The message is 
+clear:</b> Avoid using deprecated tags and attributes!
+
+These tags and attributes should be avoided:<hr>
+
+
+<table border=1>
+<tr>
+<th align="left">Tags</th>
+<th align="left">Description</th>
+</tr>
+<tr>
+<td>&lt;center&gt;</td>
+<td><span class="deprecated">Deprecated.</span> Defines centered content</td>
+</tr>
+<tr>
+<td>&lt;font&gt; and &lt;basefont&gt;</td>
+<td><span class="deprecated">Deprecated.</span> Defines HTML fonts</td>
+</tr>
+<tr>
+<td>&lt;s&gt; and &lt;strike&gt;</td>
+<td><span class="deprecated">Deprecated.</span> Defines strikethrough text</td>
+</tr>
+<tr>
+<td>&lt;u&gt;</td>
+<td><span class="deprecated">Deprecated.</span> Defines underlined text</td>
+</tr>
+<tr>
+<th align="left">Attributes</th>
+<th align="left">Description</th>
+</tr>
+<tr>
+<td>align</td>
+<td><span class="deprecated">Deprecated.</span> Defines the alignment of text</td>
+</tr>
+<tr>
+<td>bgcolor</td>
+<td><span class="deprecated">Deprecated.</span> Defines the background color</td>
+</tr>
+<tr>
+<td>color</td>
+<td><span class="deprecated">Deprecated.</span> Defines the text color</td>
+</tr>
+</table>
+<b>For all of the above: Use styles instead!</b>
+		
+      <h3>Learn HTML</h3>  
+
+    </div>      
+
+  </body>
+</html>

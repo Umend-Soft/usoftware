@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c10.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c12.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 11. If</h1>
+				  
+<h2>JavaScript If Statement</h2>
+As your JavaScript programs get more sophisticated, you will need to make use of conditional statements that allow your program to make decisions.  Nearly all other programming languages use conditionals, and JavaScript is no exception.<hr>
+
+
+The "If Statement" is a way to make decisions based on a variable or some other type of data. For example, you might have a variable that stores the date.  With this tiny bit of information, you can easily program a small script to print out, "Today is my Birthday!" whenever the day and month were equal to your birthday.<hr>
+
+This lesson will teach you the basics of using an "If Statement" in JavaScript.<hr>
+
+<h2>JavaScript If Statement Syntax</h2>
+There are two major parts to an If Statement: the conditional statement and the code to be executed.<hr>
+
+The conditional statement is a statement that will evaluate to be either True or False.  The most common type of conditional statement used checks to see if something equals a value.  An example would be checking if a date equals your birthday.<hr>
+
+Below is a segment of JavaScript code that will be executed only if the If Statement's conditional statement is true.  In this simple <i>If Statement</i> example,
+we print out a message if the variable we are checking is equal to 7.<hr>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+&lt;!--
+var myNum = 7;
+
+if(myNum == 7){
+	<indent>document.write("Lucky 7!");</indent>
+}
+//--&gt;
+&lt;/script&gt;
+
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><div class='display'>
+  Lucky 7!
+</div>
+
+This simple example created <i>myNum</i> and set it to 7.  We then checked to see if <i>myNum</i> was equal to 7 ("myNum == 7") in the <i>If Statement's</i> conditional statement, evaluated to <i>True</i>.<hr>
+
+Because the conditional statement was <i>True</i> the block of code associated with our If Statement ("document.write...") was executed, as you can see in the Display.<hr>
+
+<h2>JavaScript If Statement: Else </h2>
+We already taught you how to execute code if a given condition is <i>True</i>, but what if you want to execute <i>another</i> piece of code if something is <i>False</i>? The answer is to use an extension to the <i>If Statement</i>; the <i>Else</i> clause.<hr>
+
+The <i>Else</i> clause is executed when the conditional statement is <i>False</i>. Let's take our example from above, add an <i>Else</i> clause, and change the value of <i>myNum</i> so that our conditional statement is False.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+&lt;!--
+var myNum = 10;
+
+if(myNum == 7){
+	<indent>document.write("Lucky 7!");</indent>
+}<font color='red'>else{	
+	<indent>document.write("You're not very lucky today...");</indent>	
+}</font>
+//--&gt;
+&lt;/script&gt;
+
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  You're not very lucky today...
+  
+</blockquote>
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

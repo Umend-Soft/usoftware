@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style.css" />
+  </head> 
+  <body> 
+	<header>Learn HTML</header>
+
+	<div>
+
+	<a href="a33.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="a.html"><img src="icon/a.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="a35.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Html - 34. Advanced - Media-Videos</h1>
+				 
+				  
+<h2>Media-Videos</h2>
+Videos can be played in HTML by many 
+different methods.<hr>
+
+<hr />
+
+<h2>Playing Videos in HTML</h2>
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;controls&quot;&gt;<br />
+&nbsp; &lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot; /&gt;<br />
+&nbsp; &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot; /&gt;<br />
+&nbsp; &lt;source src=&quot;movie.webm&quot; type=&quot;video/webm&quot; /&gt;<br />
+&lt;object data=&quot;movie.mp4&quot; 
+	width=&quot;320&quot; height=&quot;240&quot;&gt;<br />
+	&nbsp;
+	&lt;embed src=&quot;movie.swf&quot; width=&quot;320&quot; 
+	height=&quot;240&quot; /&gt;<br />
+	&lt;/object&gt; 	<br />
+	&lt;/video&gt;
+</blockquote>
+<br />
+<hr />
+
+<h2>Problems, Problems, and Solutions</h2>
+Displaying videos in HTML is not easy!<hr>
+
+You must add a lot of tricks to make sure your video will play in all browsers 
+(Internet Explorer, Chrome, Firefox, Safari, Opera) and on all hardware (PC, Mac , 
+iPad, iPhone). <hr>
+
+In this chapter W3Schools summarizes the problems and the solutions.<hr>
+
+<hr />
+
+<h2>The &lt;embed&gt; Tag</h2>
+The purpose of the &lt;embed&gt; tag is to embed multimedia elements in HTML pages.<hr>
+
+The following HTML fragment displays a Flash video embedded in a web page:<hr>
+
+
+
+<h2 class="example">Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;embed src=&quot;intro.swf&quot; height=&quot;200&quot; width=&quot;200&quot;/&gt;
+</blockquote>
+<b>Problems</b><hr>
+
+<ul>
+	<li>The &lt;embed&gt; tag is unknown to HTML 4. Your page will not validate 
+	correctly.</li>
+	<li>If the browser does not support Flash, your video will not play.</li>
+	<li>iPad and iPhone cannot display Flash videos.</li>
+	<li>If you convert the video to another format, it will still not play in 
+	all browsers.</li>
+</ul>
+<hr />
+
+<h2>Using The &lt;object&gt; Tag</h2>
+The purpose of the &lt;object&gt; tag is to embed multimedia elements in HTML pages.<hr>
+
+The following HTML fragment displays a Flash video embedded in a web page:<hr>
+
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;object data=&quot;intro.swf&quot; height=&quot;200&quot; width=&quot;200&quot;/&gt;
+<br />
+	</blockquote>
+<strong>Problems:</strong><hr>
+
+<ul>
+	<li>If the browser does not support Flash, your video will not play.</li>
+	<li>iPad and iPhone cannot display Flash videos.</li>
+	<li>If you convert the video to another format, it will still not play in 
+	all browsers.</li>
+</ul>
+<hr />
+<h2>Using the &lt;video&gt; Tag</h2>
+
+The &lt;video&gt; element is new in HTML 5. <hr>
+
+The purpose of the &lt;video&gt; tag is to embed video elements in HTML pages.<hr>
+
+The following HTML fragment displays a video in ogg, mp4, or webm format 
+embedded in a web page:<hr>
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;controls&quot;&gt;<br />
+&nbsp; &lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot; /&gt;<br />
+&nbsp; &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot; /&gt; <br />
+&nbsp; &lt;source src=&quot;movie.webm&quot; type=&quot;video/webm&quot; /&gt;<br />
+	Your browser does not support the video tag.<br />
+	&lt;/video&gt;
+</blockquote>
+<strong>Problems:</strong><hr>
+
+<ul>
+	<li>You must convert your videos to many different formats.</li>
+	<li>The &lt;video&gt; element does not work in older browsers.</li>
+	<li>The &lt;video&gt; element does not validate in HTML 4 and XHTML.</li>
+</ul>
+<hr />
+
+<h2>The Best HTML Solution</h2>
+
+<h2>HTML 5 + &lt;object&gt; + &lt;embed&gt;</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;controls&quot;&gt;<br />
+&nbsp; &lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot; /&gt;<br />
+&nbsp; &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot; /&gt;<br />
+&nbsp; &lt;source src=&quot;movie.webm&quot; type=&quot;video/webm&quot; /&gt;<br />
+&lt;object data=&quot;movie.mp4&quot; 
+	width=&quot;320&quot; height=&quot;240&quot;&gt;<br />
+	&lt;embed src=&quot;movie.swf&quot; width=&quot;320&quot; 
+	height=&quot;240&quot;&gt;<br />
+	Your browser does not support video<br />
+	&lt;/embed&gt;<br />
+	&lt;/object&gt; 	<br />
+	&lt;/video&gt;
+</blockquote>
+The example above uses 4 different video formats. The HTML 5 &lt;video&gt; element 
+tries to play the video either in mp4, ogg, or webm formats. If this fails, the 
+code &quot;falls back&quot; to try the &lt;object&gt; element. If this also fails, it &quot;falls back&quot; to 
+the &lt;embed&gt; element. <hr>
+
+<strong>Problems:</strong><hr>
+
+<ul>
+	<li>You must convert your videos to many different formats.</li>
+	<li>The &lt;video&gt; element does not validate in HTML 4 and XHTML.</li>
+	<li>The &lt;embed&gt; element does not validate in HTML 4 and XHTML.</li>
+</ul>
+
+<strong>NOTE:</strong> Using &lt;!DOCTYPE html&gt; solves the validation 
+problem.<hr>
+
+
+<hr />
+
+<h2>The YouTube Solution</h2>
+The easiest way to display videos in HTML is to use YouTube (see next 
+chapter). <hr>
+
+
+<hr />
+
+<h2>Using A Hyperlink</h2>
+If a web page includes a hyperlink to a media file, most browsers will use a 
+&quot;helper application&quot; to play the file.<hr>
+
+The following code fragment displays a link to a Flash video. If a user clicks on 
+the link, the browser will launch a helper application, like Windows Media 
+Player to play the AVI file:<hr>
+
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;a href=&quot;intro.swf&quot;&gt;Play a video file&lt;/a&gt;
+</blockquote>
+<br />
+<hr />
+
+<h2>A Note About Inline Videos</h2>
+<br><br>When a video is included in a web page it is called inline video.
+<br><br>If you plan to use inline videos in your web applications, be aware that many 
+people find inline videos annoying. Also note that some users might have turned 
+off the inline video option in their browser.
+<br><br>Our best advice is to include inline videos only in web pages where the user 
+expects to see a video. An example of this is a page which opens after the 
+user has clicked on a link to see the video.
+		
+      <h3>Learn HTML</h3>  
+
+    </div>      
+
+  </body>
+</html>

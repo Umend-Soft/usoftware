@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b12.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b14.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 13. The Display Property</h1>
+				  
+				  
+<h2>The Display Property</h2>
+
+A key trick to the manipulation of <abbr title="HyperText Markup Language">HTML</abbr> elements is understanding that there's nothing at all special about how most of them work. Most pages could be made up from just a few tags that can be styled any which way you choose. The browser's default visual representation of most HTML elements consist of varying font styles, margins, padding and, essentially, display types.<hr><br>
+
+The most fundamental types of display are <strong>inline</strong>, <strong>block-line</strong> and <strong>none</strong> and they can be manipulated with the <code>display</code> property and the values <code>inline</code>, <code>block</code> and <code>none</code>.<hr><br>
+
+
+
+
+
+
+
+<code>inline</code> does just what it says - elements that are displayed inline follow the flow of a line. 
+<strong>Strong</strong>, <strong>anchor</strong> and <strong>emphasis</strong> elements are traditionally displayed inline.<hr><br>
+
+<code>block</code> puts a line break before and after the element. <strong>Header</strong> 
+and <strong>paragraph</strong> elements are examples of elements that are traditionally displayed block-line.<hr><br>
+
+<code>none</code>, well, doesn't display the element, which may sound pretty useless but can be 
+used to good effect with accessibility considerations (see Accessible Links), alternate stylesheets or advanced hover effects.<hr><br>
+
+
+
+The original default style-sheet for this site for example, manipulates a few traditionally in-line and block-line elements to fit the design.<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+h1 {
+
+	<strong>display: inline;</strong>
+
+	font-size: 2em;
+
+}
+
+
+
+#header p {
+
+	<strong>display: inline;</strong>
+
+	font-size: 0.9em;
+
+	padding-left: 2em;
+
+}
+
+</code></pre>
+
+</blockquote>
+
+This enabled the title 'htmldog.com' and the tag-line to be displayed next to 
+each other rather than above and below each other while maintaining optimum accessibility.<hr><br>
+
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<pre><code class="css">
+
+#navigation, #seeAlso, #comments, #standards {
+
+	<strong>display: none;</strong>
+
+}
+
+</code></pre>
+</blockquote>
+
+
+The above code is used in the print-only styles to basically 'turn-off' 
+those elements, such as navigation, which are insignificant to the single page.<hr><br>
+
+
+
+		  <div class="note"></div>
+
+<code>display: none</code> and <code>visibility: hidden</code> vary in that <code>display: none</code> takes the element completely out of play, where as <code>visibility: hidden</code> keeps the element and its flow in place without visually representing its contents. For example, if the second paragraph of 3 were set to <code>display: none</code>, the first paragraph would run straight in to the third whereas if it were set to <code>visibility: hidden</code>, there would be a gap where the paragraph should be.<hr><br>
+
+
+
+
+
+<h2>Tables</h2>
+
+Perhaps the best way to understand the table-related display property values is to think of HTML tables. 
+<code>table</code> is the initial display and you can mimic the <code>tr</code> and <code>td</code>elements 
+with the <code>table-row</code> and <code>table-cell</code> values respectively.<hr><br>
+
+The <code>display</code> property goes further by offering <code>table-column</code>,
+ <code>table-row-group</code>, <code>table-column-group</code>, <code>table-header-group</code>, 
+ <code>table-footer-group</code> and <code>table-caption</code> as values, which are all quite self-descriptive. 
+ The immediately obvious benefit of these values is that you can construct a table by columns, rather than the row-biased method used in HTML.<hr><br>
+
+Finally, the value <code>inline-table</code> basically sets the table without line breaks before and after it.<hr><br>
+
+
+
+
+Getting carried away with <acronym title="Cascading Style Sheets">CSS</acronym> tables can seriously damage your accessibility. 
+TML should be used to convey meaning, so if you have tabular data it should be arranged in HTML tables. Using CSS tables exclusively 
+could result in a mash of data that is completely unreadable without the CSS. Bad. And not in a Michael Jackson way.<hr><br>
+
+
+
+
+<h2>Other display types</h2>
+
+<code>list-item</code> is self descriptive and displays as in the way that you would usually expect an<code>li</code>
+HTML element to. To work properly then, elements displayed this way should be nested in a <code>ul</code> or <code>ol</code> element.<hr><br>
+
+<code>run-in</code> makes an element either in-line or block-line depending on the display of its parent. 
+It doesn't work on <abbr value="Internet Explorer">IE</abbr> or Mozilla based browsers. Very helpful.<hr><br>
+
+<code>compact</code> also makes the element inline or block-line depending on the context. It doesn't work that well either...<hr><br>
+
+<code>marker</code> is used exclusively with the <code>:before</code> and <code>:after pseudo elements 
+to define the display of the value of the <code>content</code> property. 
+The automatic display of the <code>content</code> property is already <code>marker</code>, 
+  so this is only useful if you are overriding a previous ><code>display</code>property for the pseudo element.</code>
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c13.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c15.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 14. For Loop</h1>
+				 
+				  
+<h2>JavaScript For Loop</h2>
+The JavaScript <i>For Loop</i> resembles the for loop you may have seen in many other programming languages.  It is used when you need to do a set of operations many times, with an increment of some kind after each run through the block of code. <hr>
+
+
+ If you have read the previous lesson JavaScript While Lesson then this should be a cinch.<hr>
+
+
+<h2>JavaScript For Loop Explained</h2>
+There are four important aspects of a JavaScript <i>for loop</i>:<hr>
+
+<ol>
+	<li>The <i>counter</i> variable is something that is created and usually used only in the <i>for loop</i> to count how many times the <i>for loop</i> has <i>looped</i>. i is the normal label for this counter variable and what we will be using.</li>
+	<li>The conditional statement. It is what decides whether the <i>for loop</i> continues executing or not.  This check usually includes the <i>counter</i> variable in some way.</li>
+	<li>The counter variable is incremented after every loop in the <i>increment</i> section of the <i>for loop</i>.</li>
+	<li>The code that is executed for each loop through the <i>for loop</i>.</li>
+</ol>
+
+This may seem strange, but 1-3 all occur on the same line of code.  This is because the <i>for loop</i> is such a standardized programming practice that the designers felt they might as well save some space and clutter when creating the <i>for loop</i>.<hr>
+
+<h2>JavaScript For Loop Example</h2>
+This example will show you how to create a simple <i>for loop</i> that prints out the value of our counter until the counter reaches 5.  Pay special close attention to the three different items that are on the first line of the for loop code.  These are the important <i>for loop</i> parts 1-3 that we talked about earlier.<hr>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+&lt;!--
+var linebreak = "&lt;br /&gt;";
+document.write("For loop code is beginning");
+document.write(linebreak);
+
+<font color='red'>for(i = 0; i &lt; 5; i++)</font>{
+	<indent>document.write("Counter i = " + i);
+	document.write(linebreak);</indent>
+}
+
+document.write("For loop code is finished!");
+&lt;/script&gt;
+
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  For loop code is beginning
+  <br>Counter i = 0
+  <br>Counter i = 1
+  <br>Counter i = 2
+  <br>Counter i = 3
+  <br>Counter i = 4
+  <br>For loop code is finished!
+</blockquote>
+
+
+The counter variable name <i>i</i> may seem a little strange, but it has been used for years now! No matter the language, <i>i</i> is the default name for a loop counter.  Other common variable names are <i>j, k, x, y</i> and <i>z</i>.<hr>
+
+In this example, our counter was initially set to 0 with "i = 0;" and then the conditional statement "i &lt; 5;" was executed.  Our counter was indeed smaller than 5, so the <i>for loop</i>'s code was executed.<hr>
+
+After the loop's code is executed <b>then</b> the increment "i++" happens, making the counter <i>i</i> equal to 1.  The <i>for loop</i> then checked that <i>i</i> was less than 5, which it was, causing the <i>for loop's</i> code to be executed again.<hr>
+
+This looping happened a couple more times until <i>i</i> was equal to 5, which is not less than 5, causing the <i>for loop</i>'s code to stop executing.<hr>
+
+<i>For loops</i> may seem very confusing at first, but let me assure you, they are quite useful and should be studied thoroughly by anyone who wishes to become an intermediate programmer.
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

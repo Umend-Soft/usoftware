@@ -1,0 +1,241 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b14.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b16.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 15. At-Rules</h1>
+				 
+				  
+<h2>At-Rules</h2>
+
+At-rules encapsulate a bunch of <abbr title="Cascading Style Sheets">CSS</abbr> rules and apply them to something specific. Woo.<hr><br>
+
+<h2 id="c1">Importing</h2>
+
+The <code>import</code> at-rule will bolt on another style sheet. For example, 
+if you want to add the styles of another style sheet to your existing one, you would add something like:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+<strong>@import url(addonstyles.css);</strong>
+
+</code></pre>
+
+</blockquote>
+
+This is often used in place of the <code>link</code> element to link a CSS file to an <abbr title="HyperText Markup Language">HTML</abbr> page, 
+by essentially having an internal style sheet that looks something like this:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="html">
+
+&lt;style type="text/css" media="all"&gt;<strong>@import url(monkey.css);</strong>&lt;/style&gt;
+
+</code></pre>
+</blockquote>
+
+
+The benefit of this is that older browsers, such as Netscape 4.x don't have a clue about at-rules and so won't link to the style-sheet,
+ which, if you have well-structured markup, will leave functional (although un-styled) plain HTML.<hr><br>
+
+
+
+<h2>Media types</h2>
+
+The <code>media</code> at-rule will apply its contents to a specified media, such as print. For example:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+<strong>@media print {</strong>
+
+	body {
+
+		font-size: 10pt;
+
+		font-family: times new roman, times, serif;
+
+	}
+
+
+
+	#navigation {
+
+		display: none;
+
+	}
+
+<strong>}</strong>
+
+</code></pre>
+</blockquote>
+
+
+The media-type can be:<hr><br>
+
+<ul>
+
+<li><code>all</code> - for every media under, over, around and in the sun.</li>
+
+<li><code>aural</code> - for speech synthesizers.</li>
+
+<li><code>handheld</code> - for handheld devices.</li>
+
+<li><code>print</code> - for printers.</li>
+
+<li><code>projection</code> - for projectors.</li>
+
+<li><code>screen</code> - for computer screens.</li>
+
+</ul>
+
+
+
+You can also use <code>braille</code>, <code>embossed</code>, <code>tty</code> or <code>tv</code>.<hr><br>
+
+Note: having said all of that, the only media-types currently supported by <abbr title="Internet Explorer">IE</abbr> are <code>all</code>, 
+<code>screen</code> and <code>print</code>.<hr><br>
+
+
+
+<h2>Character sets</h2>
+
+The <code>charset</code> at-rule simply sets the character set encoding of an external stylesheet. 
+It would appear at the top of the stylesheet and look something like <code>@charset "ISO-8859-1";</code><hr><br>
+
+
+
+<h2>Font faces</h2>
+
+The <code>font-face</code> at-rule is used for a detailed description of a font and can embed an external font in your CSS.<hr><br>
+
+It requires a <code>font-family</code>
+ descriptor, which the font can be referenced to, the value of which can be an existing font name (so overwriting that font when conditions are met) or it
+ can be a completely new name. To embed a font, the <code>src</code>
+ descriptor is used. Other descriptors added to the <code>font-face</code> at-rule become 
+ conditions for that embedded font to be used, for example, if you were to add a <code>font-weight: bold</code> style to the at-rule,
+ the <code>src</code> of the <code>font-family</code>
+ will only be applied to a selector with the <code>font-family</code>
+ property if the 
+ <code>font-weight</code> property is also set to <code>bold</code>.<hr><br>
+
+You might use a font-face at-rule like this:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+<strong>@font-face</strong> {
+
+	<strong>font-family: somerandomfontname;</strong>
+
+	<strong>src: url(somefont.eot);</strong>
+
+	font-weight: bold;
+
+}
+
+
+
+p {
+
+	<strong>font-family: somerandomfontname;</strong>
+
+	font-weight: bold;
+
+}
+
+</code></pre>
+</blockquote>
+This will apply the somefont.eot font to paragraphs (it would not if the <code>p</code> selector was not set to <code>font-weight: bold</code>).<hr><br>
+
+
+
+
+Support for embedded fonts is patchy at best. Mozilla based browsers don't support them and have no immediate plans to do so. Only Internet Explorer seems to have any kind of decent support and this is by no means straightforward. To embed fonts with IE, you need to use Microsoft's <a href="http://www.microsoft.com/typography/web/embedding/weft3/default.htm">WEFT</a> software, which will convert the characters of a TrueType font into a condensed OpenType font (and this can then only be used on the <acronym title="Universal Resource Identifier">URI</acronym> that you specify). Because of this limited (and quite complicated) compatibility, 
+it is best not to use fonts that do not have an adequate alternative system font.<hr><br>
+
+
+
+
+
+<h2>Pages</h2>
+
+The <code>page</code> at-rule is for <strong>paged media</strong> and is an 
+advanced way to apply styles to printed media. It defines a <strong>page block</strong> that extends on the box model
+so that you can define the size and presentation of a single page.<hr><br>
+
+There are a number of conventions that apply to <code>page</code> at-rules,
+ such as there is no padding or border and this isn't a computer screen we're talking about - pixels and ems as units aren't allowed.<hr><br>
+
+There are a number of specific properties that can be used, such as <code>size</code>, which can be set 
+to <code>portrait</code>, <code>landscape</code>, <code>auto</code> or a length. The <code>marks</code> property can
+ also be used to define crop marks.<hr><br>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<pre><code class="css">
+
+<strong>@page</strong> {
+
+	<strong>size: 15cm 20cm;</strong>
+
+	margin: 3cm;
+
+	<strong>marks: cross;</strong>
+
+}
+
+</code></pre>
+
+</blockquote>
+
+<subh2>Pseudo classes for paged media</subh2>
+
+There are three pseudo classes that are used specifically in conjunction with the <code>page</code> at-rule,
+ which would take the form of <code>@page :pseudo-class { stuff }</code>.<hr><br>
+
+<code>:first</code> applies to the first page of the paged media.<hr><br>
+
+<code>:left</code> and <code>:right</code> apply to left-facing and right-facing pages respectively. 
+This might be used to specify a greater left margin on left-facing pages and a greater right margin on right-facing pages.<hr><br>
+
+
+
+There are a number of other facets specific to the page at-rule such as page-breaks and named pages, 
+but seeing as this at-rule works on hardly any browser, you've probably wasted enough time reading this part anyway.
+ It's a nice enough idea though.
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

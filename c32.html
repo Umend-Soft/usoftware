@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c31.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c33.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 32. String Compare</h1>
+				 
+				  
+<h2>JavaScript String Compare</h2>
+Comparing strings in JavaScript is quite easy, as long as you know about the JavaScript If Statement.  This is all you need to know to find out if two strings of your choosing are equal.<hr>
+
+
+<h2>Comparing one String to another String</h2>
+Below we have created a fake authentication system and use an if statement to see if the user's name will grant them access to a special message.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var username = "Agent006";
+if(<font color='red'>username == "Agent007"</font>)
+	document.write("Welcome special agent 007"); 
+else
+	document.write("Access Denied!"); 
+document.write("&lt;br /&gt;&lt;br /&gt;Would you like to try again?&lt;br /&gt;&lt;br /&gt;");
+
+// User enters a different name
+username = "Agent007";
+if(<font color='red'>username == "Agent007"</font>)
+	document.write("Welcome special agent 007"); 
+else
+	document.write("Access Denied!"); 
+
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  Access Denied!
+  <br>
+  <br>Would you like to try again?
+  <br>
+  <br>Welcome special agent 007
+</blockquote>
+Be sure you realize that when you are comparing one string to another, you use two equals operators "==" instead of just one "=".  When you use two equals operators, it means you are comparing two values.<hr>
+In this case, the English translation of our program would be: "If username is equal to Agent007, then print out a welcome message; otherwise, access is denied."<hr>
+
+<h2>Case Insensitive String Compare</h2>
+Above, we used a case sensitive compare, meaning that if the capitalization wasn't exactly the same in both strings, the if statement would fail.  If you would like to just check that a certain word is entered, without worrying about the capitalization, use the <i>toLowerCase</i> function.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var username = "<font color='red'>someAgent</font>";
+if(username == "<font color='red'>SomeAgent</font>")
+	document.write("Welcome special agent"); 
+else
+	document.write("Access Denied!"); 
+	
+// Now as case insensitive
+document.write("&lt;br /&gt;&lt;br /&gt;Let's try it with toLowerCase&lt;br /&gt;&lt;br /&gt;");
+if(username<font color='red'>.toLowerCase()</font> == "SomeAgent"<font color='red'>.toLowerCase()</font>)
+	document.write("Welcome special agent"); 
+else
+	document.write("Access Denied!"); 
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  Access Denied!
+  <br>
+  <br>Let's try it with toLowerCase
+  <br>
+  <br>Welcome special agent
+</blockquote>
+
+By converting both strings to lowercase, we were able to remove the problem of it failing to find a match
+ when the capitalization was slightly off.  In this case, the "s" was capitalized in the username, but not capitalized in our 
+ if statement check.
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

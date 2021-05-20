@@ -1,0 +1,250 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style.css" />
+  </head> 
+  <body> 
+	<header>Learn HTML</header>
+
+	<div>
+
+	<a href="a12.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="a.html"><img src="icon/a.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="a14.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Html - 13. Tables</h1>
+				  
+<h2>HTML Tables</h2>
+
+Tables may seem difficult at first, but after working through this lesson you'll see how they aren't too bad. 
+The &lt;table&gt; tag is used to begin a table. Within a table element are the &lt;tr&gt; (table rows) and &lt;td&gt; (table columns) tags. 
+Tables are a handy way to create a site's layout, but it does take some getting used to. Here's how to make a table.
+<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<table border=1 style="width:60%">
+	<tr>
+		<td>Apples</td>
+		<td>44%</td>
+	</tr>
+	<tr>
+		<td>Bananas</td>
+		<td>23%</td>
+	</tr>
+	<tr>
+		<td>Oranges</td>
+		<td>13%</td>
+	</tr>
+	<tr>
+		<td>Other</td>
+		<td>10%</td>
+	</tr>
+</table>
+</blockquote>
+<hr />
+<h2>HTML Tables</h2>
+Tables are defined with the &lt;table&gt; tag.<hr>
+
+A table is divided into rows
+(with the &lt;tr&gt; tag), and each row is divided into data cells
+(with the &lt;td&gt; tag). td stands for "table data," and holds the
+content of a data cell. A &lt;td&gt; tag can contain text, links, images, lists, forms, 
+other
+tables, etc.<hr>
+
+<h2>Table Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+
+&lt;table border=&quot;1&quot;&gt;<br />
+&lt;tr&gt;<br />
+&lt;td&gt;row 1, cell 1&lt;/td&gt;<br />
+&lt;td&gt;row 1, cell 2&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td&gt;row 2, cell 1&lt;/td&gt;<br />
+&lt;td&gt;row 2, cell 2&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;/table&gt;
+
+
+</blockquote>
+How the HTML code above looks in a browser:<hr>
+
+<table border="1">
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table>
+<br />
+<hr />
+
+<h2>HTML Tables and the Border Attribute</h2>
+If you do not specify a border attribute, the table will be displayed without
+borders. Sometimes this can be useful, but most of the time, we want the
+borders to show.
+<hr>
+
+To display a table with borders, specify the border attribute:<hr>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;table border=&quot;1&quot;&gt;<br />
+&lt;tr&gt;<br />
+&lt;td&gt;Row 1, cell 1&lt;/td&gt;<br />
+&lt;td&gt;Row 1, cell 2&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;/table&gt;
+</blockquote>
+<br />
+<hr />
+<h2>HTML Table Headers</h2>
+Header information in a table are defined with the &lt;th&gt; tag.<hr>
+
+All major browsers display the text in the &lt;th&gt; element as bold and centered.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;table border=&quot;1&quot;&gt;<br />
+&lt;tr&gt;<br />
+&lt;th&gt;Header 1&lt;/th&gt;<br />
+&lt;th&gt;Header 2&lt;/th&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td&gt;row 1, cell 1&lt;/td&gt;<br />
+&lt;td&gt;row 1, cell 2&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td&gt;row 2, cell 1&lt;/td&gt;<br />
+&lt;td&gt;row 2, cell 2&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;/table&gt;
+</blockquote>
+How the HTML code above looks in your browser:<hr>
+
+<table border="1">
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table>
+<br />
+<hr />
+
+<h4>Spanning Multiple Rows and Cells</h4>
+
+Use <i>rowspan</i> to span multiple rows and <i>colspan</i> to span multiple columns.<hr>
+
+Note: if you would like to place headers at the top of your columns, use the &lt;th&gt; tag as shown below. By default these headers are bold to set them apart from the rest of your table's content.<hr>
+
+
+<h4>HTML Code:</h4>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;th&gt;Column 1&lt;/th&gt;
+&lt;th&gt;Column 2&lt;/th&gt;
+&lt;th&gt;Column 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td rowspan="2"&gt;Row 1 Cell 1&lt;/td&gt;
+&lt;td&gt;Row 1 Cell 2&lt;/td&gt;&lt;td&gt;Row 1 Cell 3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Row 2 Cell 2&lt;/td&gt;&lt;td&gt;Row 2 Cell 3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="3"&gt;Row 3 Cell 1&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</blockquote>
+
+<h4>Colspan and Rowspan:</h4>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<table BORDER="1">
+<tr><td><b>Column 1</b></td><td><b>Column 2</b></td><td><b>Column 3</b></td></tr>
+<tr><td ROWSPAN="2">Row 1 Cell 1</td><td>Row 1 Cell 2</td><td>Row 1 Cell 3</td></tr>
+<tr><td>Row 2 Cell 2</td><td>Row 2 Cell 3</td></tr>
+<tr><td COLSPAN="3">Row 3 Cell 1</td></tr>
+</table>
+</blockquote>
+
+
+<h4>Cell Padding and Spacing</h4>
+With the <i>cellpadding</i> and <i>cellspacing</i> attributes you will be able to adjust the white space on your tables. Spacing defines the width of the border, while padding represents the distance between cell borders and the content within. Color has been added to the table to emphasize these attributes.<hr>
+
+
+<h4>HTML Code:</h4>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;table border="1" <b>cellspacing="10"</b><br />
+ bgcolor="rgb(0,255,0)"&gt;
+&lt;tr&gt;
+&lt;th&gt; Column 1 &lt;/th&gt; 
+&lt;th&gt; Column 2 &lt;/th&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt;&lt;td&gt; Row 1 Cell 1 &lt;/td&gt;&lt;td&gt; Row 1 Cell 2 &lt;/td&gt;&lt;/tr&gt; 
+&lt;tr&gt;&lt;td&gt; Row 2 Cell 1 &lt;/td&gt;&lt;td&gt; Row 2 Cell 2 &lt;/td&gt;&lt;/tr&gt; 
+&lt;/table&gt;
+</blockquote>
+
+<h4>Cellspacing and Padding:</h4>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<table BORDER="1" CELLSPACING="10" BGCOLOR="rgb(0,0,0)">
+<tr><td><b>Column 1</b></td><td><b>Column 2</b></td></tr>
+<tr><td>Row 1 Cell 1</td><td>Row 1 Cell 2</td></tr>
+<tr><td>Row 2 Cell 1</td><td>Row 2 Cell 2</td></tr>
+</table>
+</blockquote>
+
+And now we will change the cellpadding of the table and remove the cellspacing from the previous example.<hr>
+
+
+<h4>HTML Code:</h4>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;table border="1" <b>cellpadding="10"</b><br /> bgcolor="rgb(0,255,0)"&gt; 
+&lt;tr&gt;
+&lt;th&gt; Column 1&lt;/th&gt;
+&lt;th&gt; Column 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; Row 1 Cell 1&lt;/td&gt;&lt;td&gt; Row 1 Cell 2&lt;/td&gt;&lt;/tr&gt; 
+&lt;tr&gt;&lt;td&gt; Row 2 Cell 1&lt;/td&gt;&lt;td&gt; Row 2 Cell 2&lt;/td&gt;&lt;/tr&gt; 
+&lt;/table&gt;
+</blockquote>
+
+<h4>Cell Pads:</h4>
+<blockquote style="background-color:#FFFFFF;padding:5px 5px 5px 5px;">
+<table BORDER="1" CELLPADDING="10" BGCOLOR="rgb(0,0,0)">
+<tr><td><b>Column 1</b></td><td><b>Column 2</b></td></tr>
+<tr><td>Row 1 Cell 1</td><td>Row 1 Cell 2</td></tr>
+<tr><td>Row 2 Cell 1</td><td>Row 2 Cell 2</td></tr>
+</table>
+</blockquote>
+The value you specify for padding and spacing is interpreted by the browser as a pixel value you.  So a value of 10 is simply 10 pixels wide.
+ Most attributes that use numeric values for their measurements use pixels.
+		
+      <h3>Learn HTML</h3>  
+
+    </div>      
+
+  </body>
+</html>

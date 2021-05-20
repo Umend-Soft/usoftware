@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c8.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c10.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 9. Event</h1>
+				 
+				  
+<h2>Events in JavaScript</h2>
+The absolute coolest thing about JavaScript is its ability to help you create dynamic webpages that increase user interaction, making the visitor feel like the website is almost coming alive right before her eyes. <hr>
+
+The building blocks of an interactive web page is the JavaScript event system. An event in JavaScript is something that happens with or on the webpage.  A few example of events:
+<hr>
+<ul>
+	<li>A mouse click</li>
+	<li>The webpage loading</li>
+	<li>Mousing over a hot spot on the webpage, also known as hovering</li>
+	<li>Selecting an input box in an HTML form</li>
+	<li>A keystroke</li>
+</ul>
+
+<h2>A Couple of Examples Using Events</h2>
+JavaScript has predefined names that cover numerous events that can occur, including the ones listed above.  To capture an event and make something happen when that event occurs, you must specify the event, the HTML element that will be waiting for the event, and the function(s) that will be run when the event occurs.<hr>
+We have used a JavaScript event in a , where we had an alert popup when the button was clicked.  This was an "onclick" JavaScript event.  We will do that same example again, as well as the <i>mouseover</i> and <i>mouseout</i> events.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>HTML &amp; JavaScript Code:</h2><pre class='code'>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+function popup() {
+	alert("Hello World")
+}
+//--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;input type="button" value="Click Me!" onclick="popup()"&gt;&lt;br /&gt;
+&lt;a href="#" onmouseover="" onMouseout="popup()"&gt;
+Hover Me!&lt;/a&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></blockquote>
+
+
+<h2 class='specialT'>Display:</h2><div class='display'>
+<INPUT  TYPE="button" VALUE="Click Me!" ONCLICK="popup()"/><br /><br />
+<a HREF="#" ONMOUSEOVER="" ONMOUSEOUT="popup()">Hover Me!</a>
+</div> 
+With the button we used the event <i>onClick</i> event as our desired action and told it to call our popup function that is defined in our header. To call a function you must give the function name followed up with parenthesis  "()".<hr>
+Our <i>mouseover</i> and <i>mouseout</i> events were combined on one HTML element--a link.  We wanted to do nothing when someone put their mouse on the link, but when the mouse moves off the link (<i>onMouseout</i>), we displayed a popup.
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

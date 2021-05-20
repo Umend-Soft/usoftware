@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style.css" />
+  </head> 
+  <body> 
+	<header>Learn HTML</header>
+
+	<div>
+
+	<a href="a31.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="a.html"><img src="icon/a.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="a33.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Html - 32. Advanced - Media-Audio</h1>
+				  
+<h2>Media-Audio</h2>
+Sounds can be played in HTML by many different methods.<hr>
+
+<hr />
+
+<h2>Problems and Solutions</h2>
+Displaying audio in HTML is not easy!<hr>
+
+You must add a lot of tricks to make sure your audio files will play in all browsers 
+(Internet Explorer, Chrome, Firefox, Safari, Opera) and on all hardware (PC, Mac , iPad, iPhone). <hr>
+
+In this chapter W3Schools summarizes the problems and the solutions.<hr>
+
+<hr />
+
+<h2>The Easiest Way to Add Audio to Your Site</h2>
+The easiest way to add Audio to your web pages?<hr>
+
+The Yahoo Media Player (described at the bottom of this page) is definitely a 
+favorite.<hr>
+
+It plays mp3 and a variety of other formats. You can add it to your page (or 
+blog) with a single line of code, and easily turn your HTML page into a 
+professional playlist.<hr>
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;a href=&quot;song.mp3&quot;&gt;Play Song&lt;/a&gt;<br />
+	<br />
+	&lt;script type=&quot;text/javascript&quot; src=&quot;http://mediaplayer.yahoo.com/js&quot;&gt;<br />
+	&lt;/script&gt;
+
+<br />
+</blockquote>
+
+
+<hr />
+
+<h2>Using Plugins</h2>
+A Plugin is a small computer program that extends the standard functionality 
+of a web browser. Plugins can be used for many purposes. They can be used to display 
+music, display maps, verify your bank id, control your input, and much more.<hr>
+
+Plugins can be added to HTML pages using &lt;object&gt; or &lt;embed&gt; tags. <hr>
+
+
+<hr />
+
+<h2>Playing Audio in HTML</h2>
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;audio controls=&quot;controls&quot; height=&quot;50px&quot; width=&quot;100px&quot;&gt;<br />
+&nbsp; &lt;source src=&quot;song.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;<br />
+&nbsp; &lt;source src=&quot;song.ogg&quot; type=&quot;audio/ogg&quot; /&gt;<br />
+&lt;embed height=&quot;50px&quot; width=&quot;100px&quot; src=&quot;song.mp3&quot; 
+	/&gt;<br />
+	&lt;/audio&gt;
+
+<br />
+	
+</blockquote>
+
+<hr />
+
+<h2>Using The &lt;embed&gt; Element</h2>
+The purpose of the &lt;embed&gt; tag is to embed multimedia elements in HTML pages.<hr>
+
+The following code fragment displays an MP3 file embedded in a web page.<hr>
+
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;embed height=&quot;50px&quot; width=&quot;100px&quot; src=&quot;song.mp3&quot; /&gt;
+
+<br />
+	
+</blockquote>
+
+<b>Problems:</b><hr>
+
+<ul>
+	<li>The &lt;embed&gt; tag is unknown to HTML 4. Your page will not 
+	validate correctly.</li>
+	<li>If your browser does not support the file format, your audio will not 
+	play.</li>
+	<li>If you convert your file to another format, it will still not play in 
+	all browsers.</li>
+</ul>
+<hr />
+
+<h2>Using The &lt;object&gt; Element</h2>
+The purpose of the &lt;object&gt; tag is to embed multimedia elements in HTML pages.<hr>
+
+The following code fragment displays an MP3 file embedded in a web page.<hr>
+
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;object height=&quot;50px&quot; width=&quot;100px&quot; data=&quot;song.mp3&quot; /&gt;<br />
+
+<br />
+	
+</blockquote>
+<b>Problems:</b><hr>
+
+<ul>
+	<li>If your browser does not support the file format, your audio will not 
+	play.</li>
+	<li>If you convert your file to another format, it will still not play in 
+	all browsers.</li>
+</ul>
+
+<hr />
+
+<h2>Using the &lt;audio&gt; Element</h2>
+The &lt;audio&gt; element is an HTML 5 element, unknown to HTML 4, but it 
+works in new browsers.<hr>
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;audio controls=&quot;controls&quot;&gt;<br />
+&nbsp; &lt;source src=&quot;song.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;<br />
+&nbsp; &lt;source src=&quot;song.ogg&quot; type=&quot;audio/ogg&quot; /&gt;<br />
+	Your browser does not support this audio<br />
+	&lt;/audio&gt;
+
+<br />
+
+</blockquote>
+		
+      <h3>Learn HTML</h3>  
+
+    </div>      
+
+  </body>
+</html>

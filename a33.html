@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style.css" />
+  </head> 
+  <body> 
+	<header>Learn HTML</header>
+
+	<div>
+
+	<a href="a32.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="a.html"><img src="icon/a.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="a34.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Html - 33. Advanced - Media-Objects</h1>
+				
+				  
+<h2>Media-Objects</h2>
+<br>The purpose of the &lt;object&gt; element is to support HTML 
+helpers (Plug-Ins)
+<hr />
+<h2>HTML Helpers (Plug-Ins)</h2>
+<table>
+<tr>
+
+
+<td valign="top">
+A helper application is a program that can be launched by the browser to 
+&quot;help&quot;. Helper applications are also called Plug-Ins.<br /><br />
+Helper applications can be used to play audio and video (and much more).
+Helper applications are launched using the &lt;object&gt; tag. <br /><br />
+One advantage of using a helper application to play video and audio, is that you can let some 
+(or all) of the player settings be controlled by the user.<br /><br />
+Most helper applications allow manual (or programmed) control over the volume 
+settings and play functions like rewind, pause, stop and play.
+</td>
+</tr></table>
+<hr />
+
+<h2>The Best Way to Play Videos in HTML?</h2>
+<br>For the best general way to include videos in HTML, refer to the next 
+chapter. 
+<hr />
+
+<h2>Playing Wave Audio Using QuickTime</h2>
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;object width=&quot;420&quot; height=&quot;360&quot;<br />
+	classid=&quot;clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B&quot; <br />
+	codebase=&quot;http://www.apple.com/qtactivex/qtplugin.cab&quot;&gt;<br />
+	&lt;param name=&quot;src&quot; value=&quot;liar.wav&quot; /&gt;<br />
+	&lt;param name=&quot;controller&quot; value=&quot;true&quot; /&gt;<br />
+	&lt;/object&gt;
+</blockquote>
+<br />
+<hr />
+
+<h2>Playing MP4 Video Using QuickTime</h2>
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;object width=&quot;420&quot; height=&quot;360&quot;<br />
+	classid=&quot;clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B&quot; <br />
+	codebase=&quot;http://www.apple.com/qtactivex/qtplugin.cab&quot;&gt;<br />
+	&lt;param name=&quot;src&quot; value=&quot;movie.mp4&quot; /&gt;<br />
+	&lt;param name=&quot;controller&quot; value=&quot;true&quot; /&gt;<br />
+	&lt;/object&gt;
+
+<br />
+	
+</blockquote>
+<br />
+<hr />
+
+<h2>Playing SWF Videos Using Flash</h2>
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;object width=&quot;400&quot; height=&quot;40&quot;<br />
+classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot;<br />
+codebase=&quot;http://fpdownload.macromedia.com/<br />
+pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0&quot;&gt;<br />
+&lt;param name=&quot;SRC&quot; value=&quot;bookmark.swf&quot;&gt;<br />
+&lt;embed src=&quot;bookmark.swf&quot; width=&quot;400&quot; height=&quot;40&quot;&gt;&lt;/embed&gt;<br />
+&lt;/object&gt;
+</blockquote>
+<hr />
+
+<h2>Playing WMV Movies Using Windows Media Player</h2>
+<br>The example below shows the suggested code used to display a Windows Media 
+file.
+
+<h2>Eample</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+	&lt;object width=&quot;100%&quot; height=&quot;100%&quot;<br />
+	type=&quot;video/x-ms-asf&quot; url=&quot;3d.wmv&quot; data=&quot;3d.wmv&quot;<br />
+	classid=&quot;CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6&quot;&gt;<br />
+	&lt;param name=&quot;url&quot; value=&quot;3d.wmv&quot;&gt;<br />
+	&lt;param name=&quot;filename&quot; value=&quot;3d.wmv&quot;&gt;<br />
+	&lt;param name=&quot;autostart&quot; value=&quot;1&quot;&gt;<br />
+	&lt;param name=&quot;uiMode&quot; value=&quot;full&quot; /&gt;<br />
+	&lt;param name=&quot;autosize&quot; value=&quot;1&quot;&gt;<br />
+	&lt;param name=&quot;playcount&quot; value=&quot;1&quot;&gt; <br />
+	&lt;embed type=&quot;application/x-mplayer2&quot; src=&quot;3d.wmv&quot; width=&quot;100%&quot; height=&quot;100%&quot; 
+	autostart=&quot;true&quot; showcontrols=&quot;true&quot; pluginspage=&quot;http://www.microsoft.com/Windows/MediaPlayer/&quot;&gt;&lt;/embed&gt;<br />
+	&lt;/object&gt;
+	</blockquote>
+<br />
+<hr />
+
+<h2>Plug-Ins </h2>
+<br>Plug-Ins can be used in HTML for many purposes. They can be used to display 
+maps, verify your bank id, control your input, and much more. The restrictions 
+are few.
+		
+      <h3>Learn HTML</h3>  
+
+    </div>      
+
+  </body>
+</html>

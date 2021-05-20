@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style.css" />
+  </head> 
+  <body> 
+	<header>Learn HTML</header>
+
+	<div>
+
+	<a href="a19.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="a.html"><img src="icon/a.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="a21.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Html - 20. Advanced - Website Layouts</h1>
+				
+				  
+<h2>Website Layouts</h2>
+
+HTML layout is very basic. Not many options exist with the body tag alone. Tables on the other hand are the bread and butter of HTML layouts.
+ Any element may be placed inside of a table including tables themselves.
+<hr>
+
+Web page layout is very important to make your website look 
+good.<hr>
+
+Design your webpage layout very carefully.<hr>
+
+
+
+Most websites have put their 
+content in multiple columns (formatted like a magazine or newspaper).<hr>
+
+Multiple columns are created by using &lt;table&gt; or &lt;div&gt; tags. Some CSS are 
+normally also added to position elements, or to create backgrounds or 
+colorful look for the pages.<hr>
+
+
+<hr />
+
+<h2>HTML Layouts - Using Tables</h2>
+
+The simplest way of creating layouts is by using the HTML &lt;table&gt; 
+tag.<hr>
+
+The following example uses a table with 
+3 rows and 2 columns - the first and last row spans both columns using 
+the colspan attribute:<hr>
+
+
+
+<h2>Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;html&gt;<br />
+&lt;body&gt;<br />
+<br />
+&lt;table width=&quot;500&quot; border=&quot;0&quot;&gt;<br />
+&lt;tr&gt;<br />
+&lt;td colspan=&quot;2&quot; style=&quot;background-color:#FFA500;&quot;&gt;<br />
+&lt;h1&gt;Main Title of Web Page&lt;/h1&gt;<br />
+&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+<br />
+&lt;tr valign=&quot;top&quot;&gt;<br />
+&lt;td style=&quot;background-color:#FFD700;width:100px;text-align:top;&quot;&gt;<br />
+&lt;b&gt;Menu&lt;/b&gt;&lt;br /&gt;<br />
+HTML&lt;br /&gt;<br />
+CSS&lt;br /&gt;<br />
+JavaScript<br />
+&lt;/td&gt;<br />
+&lt;td style=&quot;background-color:#EEEEEE;height:200px;width:400px;text-align:top;&quot;&gt;<br />
+Content goes here&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+<br />
+&lt;tr&gt;<br />
+&lt;td colspan=&quot;2&quot; style=&quot;background-color:#FFA500;text-align:center;&quot;&gt;<br />
+Copyright © 2011 W3Schools.com&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;/table&gt;<br />
+<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;
+<br />
+
+</blockquote>
+
+The HTML code above will produce the following result:<hr>
+
+<table width="500" border="0">
+<tr>
+<td colspan="2" style="background-color:#FFA500;">
+<h2>Main Title of Web Page</h2>
+</td>
+</tr>
+<tr valign="top">
+<td style="background-color:#FFD700;width:100px;text-align:top;">
+<b>Menu</b><br />
+HTML<br />
+CSS<br />
+JavaScript
+</td>
+<td style="background-color:#eeeeee;height:200px;text-align:top;">
+Content goes here</td>
+</tr>
+<tr>
+<td colspan="2" style="background-color:#FFA500;text-align:center;">
+web</td>
+</tr>
+</table>
+
+<b>Note:</b> Even 
+though it is possible to create nice layouts with HTML tables, tables were 
+designed for presenting tabular data - NOT as a layout tool!<hr>
+
+<hr />
+
+<h2>HTML Layouts - Using Div Elements</h2>
+The div element is a block level element used for grouping HTML elements.<hr>
+
+The following example uses five div elements to create a multiple column 
+layout, creating the same result as in 
+the previous example:<hr>
+
+
+
+<h2 class="example">Example</h2>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;html&gt;<br />
+&lt;body&gt;<br />
+<br />
+&lt;div id=&quot;container&quot; style=&quot;width:500px&quot;&gt;<br />
+<br />
+&lt;div id=&quot;header&quot; style=&quot;background-color:#FFA500;&quot;&gt;<br />
+&lt;h1 style=&quot;margin-bottom:0;&quot;&gt;Main Title of Web Page&lt;/h1&gt;&lt;/div&gt;<br />
+<br />
+&lt;div id=&quot;menu&quot; style=&quot;background-color:#FFD700;height:200px;width:100px;float:left;&quot;&gt;<br />
+&lt;b&gt;Menu&lt;/b&gt;&lt;br /&gt;<br />
+HTML&lt;br /&gt;<br />
+CSS&lt;br /&gt;<br />
+JavaScript&lt;/div&gt;<br />
+<br />
+&lt;div id=&quot;content&quot; style=&quot;background-color:#EEEEEE;height:200px;width:400px;float:left;&quot;&gt;<br />
+Content goes here&lt;/div&gt;<br />
+<br />
+&lt;div id=&quot;footer&quot; style=&quot;background-color:#FFA500;clear:both;text-align:center;&quot;&gt;<br />
+.com&lt;/div&gt;<br />
+<br />
+&lt;/div&gt;<br />
+<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;
+
+
+</blockquote>
+
+The HTML code above will produce the following result:<hr>
+
+
+<div style="width:500px;">
+<div style="background-color:#FFA500;">
+<h2 style="margin-bottom:0;">Main Title of Web Page</h2></div>
+<div style="background-color:#FFD700;height:200px;width:100px;float:left;">
+<b>Menu</b><br />
+HTML<br />
+CSS<br />
+JavaScript</div>
+<div style="background-color:#eeeeee;height:200px;width:400px;float:left;">
+Content goes here</div>
+<div style="background-color:#FFA500;clear:both;text-align:center;">
+</div>
+</div>
+<br />
+<hr />
+
+<h2>HTML Layout - Useful Tips</h2>
+<b>Tip:</b> The biggest advantage of using CSS is that, if you place the CSS 
+code in an external style sheet, your site becomes 
+MUCH EASIER to 
+maintain. You can change the layout of all your pages by editing one file. To 
+learn more about CSS.<hr>
+
+<b>Tip:</b> Because advanced layouts take time to create, a quicker option is 
+to use a template. Search Google for free website templates (these are pre-built 
+website layouts you can use and customize).				  
+		
+      <h3>Learn HTML</h3>  
+
+    </div>      
+
+  </body>
+</html>

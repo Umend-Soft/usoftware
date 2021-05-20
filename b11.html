@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b10.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b12.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 11. Shorthand Properties</h1>
+
+Some <abbr title="Cascading Style Sheets">CSS</abbr> properties allow a string of values, replacing the need for a number of properties. These are represented by values separated by <strong>spaces</strong>.<hr><br>
+
+
+
+margin, padding and border-width allow you to amalgamate margin-top-width, margin-right-width, margin-bottom-width etc. in the form of property: top right bottom left;
+<hr><br>
+
+
+
+So:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+p {
+
+	border-top-width: 1px;
+
+	border-right-width: 5px;
+
+	border-bottom-width: 10px;
+
+	border-left-width: 20px;
+
+}
+
+</code></pre>
+</blockquote>
+
+
+Can be summed up as:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+p {
+
+	<strong>border-width: 1px 5px 10px 20px;</strong>
+
+}
+
+</code></pre>
+</blockquote>
+
+
+border-width, border-color and border-style can also be summed up as, for example:<hr><br>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+
+<pre><code class="css">
+
+p {
+
+	<strong>border: 1px red solid;</strong>
+
+}
+
+</code></pre>
+
+</blockquote>
+
+(This can also be applied to border-top, border-right etc.)<hr><br>
+
+
+
+By stating just two values (such as margin: 1em 10em;), the first value will be the top and bottom and the second value will be the right and left.<hr><br>
+
+
+
+Font-related properties can also be gathered together with the font property:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+p {
+
+	<strong>font: italic bold 1em/1.5 courier;</strong>
+
+}
+
+</code></pre>
+
+</blockquote>
+
+(Where the '/1.5' is the line-height)<hr><br>
+
+
+
+So, to put it all together, try this code:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+p {
+
+	font: 1em/1.5 "Times New Roman", times, serif;
+
+	padding: 3em 1em;
+
+	border: 1px black solid;
+
+	border-width: 1px 5px 5px 1px;
+
+	border-color: red green blue yellow;
+
+	margin: 1em 5em;
+
+}
+
+</code></pre>
+</blockquote>
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

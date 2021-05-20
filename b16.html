@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b15.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b17.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 16. Pseudo Elements</h1>
+				 
+				  
+<h2>Pseudo Elements</h2>
+
+Pseudo elements suck on to selectors much like pseudo classes, taking the form of <code>selector:pseudoelement { property: value; }</code>.
+ There are four of the suckers.<hr><br>
+
+
+
+
+
+<h2 id="c1">First letters and First lines</h2>
+
+The <code>first-letter</code> pseudo element applies to the first letter of an element and <code>first-line</code> to the top line of an element.
+ You could, for examples create drop caps and a bold first-line for paragraphs like this:<hr><br>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+
+<pre><code class="css">
+
+p<strong>:first-letter</strong> {
+
+	font-size: 3em;
+
+	float: left;
+
+}
+
+
+
+p<strong>:first-line</strong> {
+
+	font-weight: bold;
+
+}
+
+</code></pre>
+
+</blockquote>
+
+<h2>Before and after</h2>
+
+The <code>before</code> and <code>after</code> pseudo elements are used in conjunction with the <code>content</code>
+ property to place content either side of an element without touching the <abbr title="HyperText Markup Language">HTML</abbr>.<hr><br>
+
+The value of the <code>content</code> property can be <code>open-quote</code>, <code>close-quote</code>, <code>no-open-quote</code>, 
+<code>no-close-quote</code>, any string enclosed in quotation marks or any image using <code>url(imagename)</code>.<hr><br>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<pre><code class="css">
+
+blockquote<strong>:before</strong> {
+
+	<strong>content: open-quote;</strong>
+
+}
+
+
+
+blockquote<strong>:after</strong> {
+
+	<strong>content: close-quote;</strong>
+
+}
+
+
+
+li<strong>:before</strong> {
+
+	<strong>content: "POW: "</strong>
+
+}
+
+
+
+p<strong>:before</strong> {
+
+	<strong>content: url(images/jam.jpg)</strong>
+
+}
+
+</code></pre>
+
+</blockquote>
+
+
+
+Sounds great, dunnit? Well, as with so many things (<em>-sigh-</em>), most users won't be able to see the before 
+or after effects because <abbr title="Internet Explorer">IE</abbr> just can't be bothered with them. Lazy lazy lazy.
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

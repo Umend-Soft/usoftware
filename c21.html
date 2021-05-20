@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c20.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c22.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 21. Redirect</h1>
+				 
+<h2>JavaScript Redirect</h2>
+You're moving to a new domain name.  You have a time-delay placeholder on your download site.  You have a list of external web servers that are helping to mirror your site.  What will help you deal with and/or take advantage of these situations?  JavaScript redirects will.<hr>
+
+
+When your webpage is moved, you'd probably want to notify your visitors of the change. One good way is to place a "redirect page" at the old location which, after a timed delay, will forward visitors to the new location of your webpage. You can do just this with a JavaScript redirection.<hr>
+
+<h2>JavaScript Window.Location</h2>
+Control over what page is loaded into the browser rests in the JavaScript property <i>window.location</i>. By setting <i>window.location</i> equal to a new URL, you will in turn change the current webpage to the one that is specified.  If you wanted to redirect all your visitors to www.google.com when they arrived at your site, you would just need the script below:<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>HTML &amp; JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+&lt;!--
+window.location = "http://www.google.com/"
+//--&gt;
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2>JavaScript Time Delay</h2>
+Implementing a timed delay in JavaScript is useful in the following situations:<hr>
+<ul>
+	<li>Showing an "Update your bookmark" page when you have to change URLs or page locations</li>
+	<li>For download sites that wish to have a timed delay before the download starts</li>
+	<li>To refresh a webpage once every specified number of seconds</li>
+</ul>
+The code for this timed delay is slightly involved and is beyond the scope of
+this tutorial.  However, we have tested it and it seems to function properly.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>HTML &amp; JavaScript Code:</h2><pre class='code'>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+function delayer(){
+    window.location = "Redirect.html"
+}
+//--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body onLoad="setTimeout('delayer()', 5000)"&gt;
+&lt;h2&gt;Prepare to be redirected!&lt;/h2&gt;
+&lt;p&gt;Time De play&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>View Page:</h2><div class='display'>
+<a HREF="timedelay.html">Time Delay Redirect</a>
+</div>
+
+The most important part of getting the delay to work is being sure to use the JavaScript function <i>setTimeout</i>.  We want the <i>delayer()</i> function to be used after 5 seconds or 5000 milliseconds (5 seconds), so we pass the <i>setTimeout()</i> two arguments.<hr>
+
+<ul>
+	<li><b>'delayer()'</b> - The function we want <i>setTimeout()</i> to execute after	the specified delay.</li>
+	<li><b>5000</b> - the number of millisecods we want <i>setTimeout()</i> to wait	before executing our function.  1000 miliseconds = 1 second.</li>
+</ul>
+
+<h2>Web Page Redirection</h2>
+Do use JavaScript for redirections when you change your website's URL or move a file to a new location.  Don't use redirections when they can easily be replaced with a normal HTML hyperlink.
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

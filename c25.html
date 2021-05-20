@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c24.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c26.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 25. Void 0</h1>
+				 
+				  
+<h2>JavaScript Void 0</h2>
+
+Hyperlinks like <a HREF="http://www.google.com">this one</a> entice visitors to click because they know clicking it will lead them to a new page.  However, sometimes when you are making a script, you would like to add functionality to your website that lets a hyperlink to be clicked and perform a useful action like update the sums on the webpage, without loading a new page.<hr>
+
+
+It's these types of programming solutions that will utilize the JavaScript <i>Void 0</i> programming tool. This lesson will teach you some of the reasons to use the JavaScript <i>Void 0</i>programming strategy in your scripts.<hr>
+
+<h2>Directly Executing JavaScript in a Browser</h2>
+Web browsers allow you to execute JavaScript statements directly by entering JavaScript code into the browser's URL text field. All you need to do is place a <i>JavaScript:</i> before your code to inform the browser you wish to run JavaScript. You can play around with this right now by typing something like<hr>
+
+<ul><li>JavaScript:alert("I'm learning at Tizag.com")</li></ul>
+into the browser's URL text field and pressing Enter.<hr>
+
+This is useful to you, the JavaScript scripter, because you can now set your hyperlinks's <i>href</i> attribute equal to a JavaScript statement!  This means you can remove the hyperlink's ability to load a new page and reprogram it to do your "complete some actions directly on this page" bidding.<hr>
+
+This practice can be seen in services like Gmail (Google Email) which does a great deal of interaction with hyperlinks, but has very few new pages loading.  Here is an example link that does not load a new webpage.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+
+&lt;a href="<font color='red'>javascript: alert('News Flash!')</font>"&gt;News Flash&lt;/a&gt;
+
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<a HREF="javascript: alert('News Flash!')">News Flash</a>
+</blockquote>
+
+This is interesting to learn, but it isn't much more than a gimmick. The true power of direct URL JavaScript statements is only unleashed when you use it to return a value.  This is where <i>void 0</i> comes into play.<hr>
+
+<h2>JavaScript Void 0 Explanation</h2>
+Web browsers will try and take whatever is used as a URL and load it.  The only reason we can use a JavaScript Alert statement without loading a new page is because <i>alert</i> is a 
+function that returns a <i>null</i> value.  This means that when the browser attempts to load a new page it sees <i>null</i> and has <b>nothing</b> to load.<hr>
+
+The important thing to notice here is that if you ever do use a JavaScript statement as the URL that returns a value, the browser <b>will</b> attempt to load a page.  To prevent this unwanted action, you need to use the <i>void</i> function on such statement, which will always return <i>null</i> and never load a new page.<hr>
+
+
+<h2>Simple JavaScript Void 0 Simple Example</h2>
+<i>void</i> is an operator that is used to return a <i>null</i> value so the browser will not be able to load a new page. An important thing to note about the <i>void</i> operator is that it requires a value and cannot be used by itself.  Here is a simple way to use <i>void</i> to cancel out the page load.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+
+&lt;a href="<font color='red'>javascript: void(0)</font>"&gt;I am a useless link&lt;/a&gt;
+
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><div class='display'>
+<a HREF="javascript: void(0)">I am a useless link</a>
+</div>
+
+
+<h2>Simple JavaScript Void 0 Useful Example</h2>
+This example shows how you would return a value using the void operator.  <i>myNum</i> is a variable that we set to the value 10.  We then use the same variable <i>myNum</i> in an <i>alert</i>operation.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+
+&lt;a href="<font color='red'>javascript: void(myNum=10);alert('myNum = '+myNum)</font>"&gt;
+Set myNum Please&lt;/a&gt;
+
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<a HREF="javascript: void(myNum=10);alert('myNum = '+myNum)">
+Set myNum Please</a>
+</blockquote>
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

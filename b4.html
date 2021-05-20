@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b3.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b5.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 4. Text</h1>
+				  
+<h2>Text</h2>
+You can alter the size and shape of the text on a web page with a range of properties, outlined below:<hr><br>
+
+<h2>font-family</h2>
+
+This is the font itself, such as Times New Roman, Arial, or Verdana.<hr><br>
+
+The font you specify must be on the user's computer, so there is little point in using obscure fonts. 
+There are a select few '<strong>safe</strong>' fonts (the most commonly used are arial, verdana and times new roman), 
+but you can specify more than one font, separated by <strong>commas</strong>.
+ The purpose of this is that if the user does not have the first font you specify, the browser will go 
+ through the list until it finds one it does have. This is useful because different computers sometimes have different fonts installed. 
+ So <code>font-family: arial, helvetica</code>, for example, is used so that similar fonts are used on PC (which traditionally has arial, 
+ but not helvetica) and Apple Mac (which, traditionally, does not have arial and so helvetica, which it does normally have, will be used).<hr><br>
+
+Note: if the name of a font is more than one word, it should be put in quotation marks, such as <code>font-family: "Times New Roman"</code>.<hr><br>
+
+
+
+<h2>font-size</h2>
+
+The size of the font. Be careful with this - text such as headings should not just be a paragraph in a large font; 
+you should still use headings h1, h2 etc.) 
+even though, in practice, you could make the font-size of a paragraph larger than that of a heading (not recommended for sensible people).<hr><br>
+
+
+
+<h2>font-weight</h2>
+
+This states whether the text is <strong>bold</strong> or not. 
+In practice this usually only works as <strong><code>font-weight: bold</code></strong> or <strong><code>font-weight: normal</code></strong>. 
+In theory it can also be <strong><code>bolder</code></strong>, <strong><code>lighter</code></strong>, <strong><code>100</code></strong>, 
+<strong><code>200</code></strong>, <strong><code>300</code></strong>, <strong><code>400</code></strong>, <strong><code>500</code></strong>, 
+<strong><code>600</code></strong>, <strong><code>700</code></strong>, <strong><code>800</code></strong> or <strong><code>900</code></strong>,
+ but seeing as many browsers shake their heads and say "I don't think so", it's safer to stick with <code>bold</code> and <code>normal</code>.<hr><br>
+
+
+
+<h2>font-style</h2>
+
+This states whether the text is <strong>italic</strong> or not. 
+It can be <strong><code>font-style: italic</code></strong> or <strong><code>font-style: normal</code></strong>.<hr><br>
+
+
+
+<h2>text-decoration</h2>
+
+This states whether the text is underlined or not. This can be:<hr><br>
+
+<ul>
+
+<li><strong><code>text-decoration: overline</code></strong>, which places a line above the text.</li>
+
+<li><strong><code>text-decoration: line-through</code></strong>, strike-through, which puts a line through the text.</li>
+
+<li><strong><code>text-decoration: underline</code></strong> <strong>should only be used for links</strong> because users generally expect underlined text to be links.</li>
+
+</ul>
+
+This property is usually used to decorate links, such as specifying no underline with <strong><code>text-decoration: none</code></strong>.<hr><br>
+
+
+
+<h2>text-transform</h2>
+
+This will change the case of the text.<hr><br>
+
+<ul>
+
+<li><strong><code>text-transform: capitalize</code></strong> turns the first letter of every word into uppercase.</li>
+
+<li><strong><code>text-transform: uppercase</code></strong> turns everything into uppercase.</li>
+
+<li><strong><code>text-transform: lowercase</code></strong> turns everything into lowercase.</li>
+
+<li><strong><code>text-transform: none</code></strong> I'll leave for you to work out.</li>
+
+</ul>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+body {<Br>
+<Br>
+	<strong>font-family: arial, helvetica, sans-serif;</strong><Br>
+<Br>
+	<strong>font-size: 0.8em;</strong><Br>
+<Br>
+}
+<Br>
+<Br>
+
+h1 {<Br>
+<Br>
+	<strong>font-size: 2em;</strong><Br>
+<Br>
+}<Br>
+<Br>
+
+<Br>
+h2 {<Br>
+<Br>
+	<strong>font-size: 1.5em;</strong><Br>
+<Br>
+}<Br>
+<Br>
+<Br>
+
+a {<Br>
+<Br>
+	<strong>text-decoration: none;</strong><Br>
+<Br>
+}<Br>
+
+<Br>
+<Br>
+strong {<Br>
+<Br>
+	<strong>font-style: italic;</strong><Br>
+<Br>
+	<strong>text-transform: uppercase;</strong><Br>
+<Br>
+}<Br>
+
+</blockquote>
+
+
+
+<h2>Text spacing</h2>
+
+
+
+The <strong>letter-spacing</strong> and <strong>word-spacing</strong> properties are for spacing between letters or words. 
+The value can be a length or <strong><code>normal</code></strong>.<hr><br>
+
+
+
+The <strong>line-height</strong> property sets the height of the lines in an element, 
+such as a paragraph, without adjusting the size of the font. 
+It can be a number (which specifies a multiple of the font size, so '2' will be two times the font size, for example), 
+a length, a percentage or <strong><code>normal</code></strong>.<hr><br>
+
+
+
+The <strong>text-align</strong> property will align the text inside an element to <strong><code> left</code></strong>, <strong><code> 
+right</code></strong>, <strong><code>center</code></strong> or <strong><code>justify</code></strong>.<hr><br>
+
+
+
+The <strong>text-indent</strong> property will <strong><code>indent</code></strong>
+the first line of a paragraph, for example, to a given length or percentage.
+ This is a style traditionally used in print, but rarely in digital media such as the web.<hr><br>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+p {<Br>
+<Br>
+	<strong>letter-spacing: 0.5em;</strong><Br>
+<Br>
+	<strong>word-spacing: 2em;</strong><Br>
+<Br>
+	<strong>line-height: 1.5;</strong><Br>
+<Br>
+	<strong>text-align: center;</strong><Br>
+<Br>
+}<Br>
+<Br>
+</blockquote>
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

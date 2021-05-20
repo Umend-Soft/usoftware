@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b7.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b9.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 8. Class and ID Selectors</h1>
+				  
+For the <abbr title="Cascading Style Sheets">CSS</abbr> Beginner Tutoria  we looked solely at 
+<abbr title="HyperText Markup Language">HTML</abbr> selectors - those that represent an HTML tag.<hr><br>
+
+You can also define your own selectors in the form of <strong>Class</strong> and <strong>ID</strong> selectors.<hr><br>
+
+The benefit of this is that you can have the same HTML element, but present it differently depending on its class or ID.<hr><br>
+
+
+In the CSS, a class selector is a name preceded by a <strong>full stop</strong> (<strong><code>.</code></strong>) and an ID selector 
+is a name preceded by a <strong>hash character</strong> (<strong><code>#</code></strong>).<hr><br>
+
+
+
+So the CSS might look something like:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+<strong>#top</strong> {
+
+	background-color: #ccc;
+
+	padding: 1em
+
+}
+
+
+
+<strong>.intro</strong> {
+
+	color: red;
+
+	font-weight: bold;
+
+}
+
+</code></pre>
+
+</blockquote>
+
+The HTML refers to the CSS by using the attributes <strong><code>id</code></strong> and <strong><code>class</code></strong>.
+ It could look something like this:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="html">
+
+&lt;div <strong>id="top"</strong>&gt;
+
+
+
+&lt;h1&gt;Chocolate curry&lt;/h1&gt;
+
+
+
+&lt;p <strong>class="intro"</strong>&gt;This is my recipe for making curry purely with chocolate&lt;/p&gt;
+
+
+
+&lt;p <strong>class="intro"</strong>&gt;Mmm mm mmmmm&lt;/p&gt;
+
+
+
+&lt;/div&gt;
+
+</code></pre>
+</blockquote>
+
+
+The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.<hr><br>
+
+
+
+You can also apply a selector to a specific HTML element by simply stating the HTML selector first, so <code>p.jam { whatever }</code> will only be applied to <em>paragraph</em> elements that have the class 'jam'.
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

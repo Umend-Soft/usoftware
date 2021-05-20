@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c21.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c23.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 22. Pop up</h1>
+				 
+				  
+<h2>JavaScript Popups</h2>
+Chances are, if you are reading this webpage, then you have experienced hundreds of JavaScript popup windows throughout your web surfing lifetime.  Want to dish out some pain of your own creation onto unsuspecting visitors?  I hope not! Because websites with irrelevant popups are bad!<hr>
+
+
+However, we will show you how to make windows popup for reasonable occasions, like when you want to display extra information, or when you want to have something open a new window that isn't an HTML anchor tag (i.e. a hyperlink).<hr>
+
+<h2>JavaScript window.open Function</h2>
+The <i>window.open()</i> function creates a new browser window, customized to your specifications, without the use of an HTML anchor tag.  In this example, we will be making a function that utilizes the <i>window.open()</i> function.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>HTML &amp; JavaScript Code:</h2><pre class='code'>
+&lt;head&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+function myPopup() {
+<indent><font color='red'>window.open( "http://www.google.com/" )</font></indent>
+}
+//--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form&gt;
+&lt;input type="button" onClick="myPopup()" value="POP!"&gt;
+&lt;/form&gt;
+&lt;p onClick="myPopup()"&gt;CLICK ME TOO!&lt;/p&gt;
+&lt;/body&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<script TYPE="text/javascript">
+<!--
+function myPopup() {
+window.open( "http://www.google.com/" )
+}
+//-->
+</script>
+<form>
+<INPUT  TYPE="button" ONCLICK="myPopup()" VALUE="POP!"/>
+</form>
+<p ONCLICK="myPopup()">CLICK ME TOO!<hr>
+</blockquote>
+
+
+This works with pretty much any tag that can be clicked on, so please go ahead and experiment with this fun little tool. Afterwards, read on to learn more about the different ways you can customize the JavaScript window that <b>pops</b> up.<hr>
+
+<h2>JavaScript Window.Open Arguments</h2>
+There are three arguments that the <i>window.open</i> function takes:<hr>
+<ol>
+<li>The relative or absolute URL of the webpage to be opened.</li>  
+<li>The text name for the window.</li>
+<li>A long string that contains all the different properties of the window.</li>
+</ol>
+
+Naming a window is very useful if you want to manipulate it later with JavaScript. However, this is beyond the scope of this lesson, and we will instead be focusing on the different properties you can set with your brand spanking new JavaScript window.  Below are some of the more important properties:<hr>
+
+<ul>
+	<li><b>dependent</b> - Subwindow closes if the parent window (the window that opened it) closes</li>
+	<li><b>fullscreen</b> - Display browser in fullscreen mode</li>
+	<li><b>height</b> - The height of the new window, in pixels</li>
+	<li><b>width</b> - The width of the new window, in pixels</li>
+	<li><b>left</b> - Pixel offset from the left side of the screen</li>
+	<li><b>top</b> - Pixel offset from the top of the screen</li>
+	<li><b>resizable</b> - Allow the user to resize the window or prevent the user from resizing, currently broken in Firefox.</li>
+	<li><b>status</b> - Display or don't display the status bar</li>
+</ul>
+Dependent, fullscreen, resizable, and status are all examples of ON/OFF properties. You can either set them equal to zero to turn them off, or set them to one to turn them ON. There is no inbetween setting for these types of properties.<hr>
+
+<h1>Upgraded JavaScript Popup Window!</h1>
+Now that we have the tools, let's make a sophisticated JavaScript popup window that we can be proud of!<hr>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>HTML &amp; JavaScript Code:</h2><pre class='code'>
+&lt;head&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+function myPopup2() {
+<indent><font color='red'>window.open( "http://www.google.com/", "myWindow", 
+"status = 1, height = 300, width = 300, resizable = 0" )</font></indent>
+}
+//--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form&gt;
+&lt;input type="button" onClick="myPopup2()" value="POP2!"&gt;
+&lt;/form&gt;
+&lt;p onClick="myPopup2()"&gt;CLICK ME TOO!&lt;/p&gt;
+&lt;/body&gt;
+</pre></blockquote>
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<script TYPE="text/javascript">
+<!--
+function myPopup2() {
+window.open( "http://www.google.com/", "myWindow", "status = 1, height = 300, width = 300, resizable = 0" )}
+//-->
+</script>
+<form>
+<INPUT  TYPE="button" ONCLICK="myPopup2()" VALUE="POP2!"/>
+</form>
+<p ONCLICK="myPopup2()">CLICK ME TOO!<hr>
+</blockquote>
+
+Now, that is a prime example of a worthless popup!  When you make your own, try to have them relate to your content, like a small popup with no navigation that just gives the definition or explanation of a word, sentence, or picture!
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

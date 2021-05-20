@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c12.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c14.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 13. While</h1>
+				 
+				  
+<h2>JavaScript While Loop</h2>
+The while loop is an advanced programming technique that allows you to do something over and over <i>while</i> a conditional statement is true. Although the general uses of the <i>while loop</i> are usually a bit complex, this lesson will teach you the basics of how to create a <i>while loop</i> in JavaScript.<hr>
+
+
+<h2>JavaScript While Loop Explained</h2>
+There are two key parts to a JavaScript <i>while loop</i>:<hr>
+
+<ol>
+	<li>The conditional statement which must be <i>True</i> for the <i>while loop's</i> code to be executed.</li>
+	<li>The <i>while loop's</i> code that is contained in curly braces "{ and }" will be executed if the condition is <i>True</i>.</li>
+</ol>
+
+When a <i>while loop</i> begins, the JavaScript interpreter checks if the condition statement is true. If it is, the code between the curly braces is executed.  At the end of the code segment "}", the <i>while loop</i> loops back to the condition statement and begins again. <hr>
+
+If the condition statement is always <i>True</i>, then you will never exit the <i>while loop</i>, so be <b>very careful</b> when using while loops!<hr>
+
+<h2>Creating a Simple While Loop</h2>
+This example shows how to create a basic <i>while loop</i> that will execute a <i>document.write</i> 10 times and then exit the loop statement.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+&lt;!--
+var myCounter = 0;
+var linebreak = "&lt;br /&gt;";
+document.write("While loop is beginning");
+document.write(linebreak);
+
+<font color='red'>while(myCounter &lt; 10){
+	<indent>document.write("myCounter = " + myCounter);
+	document.write(linebreak);
+	myCounter++;</indent>
+}</font>
+
+document.write("While loop is finished!");
+&lt;/script&gt;
+
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  While loop is beginning
+  <br>myCounter = 0
+  <br>myCounter = 1
+  <br>myCounter = 2
+  <br>myCounter = 3
+  <br>myCounter = 4
+  <br>myCounter = 5
+  <br>myCounter = 6
+  <br>myCounter = 7
+  <br>myCounter = 8
+  <br>myCounter = 9
+  <br>While loop is finished!
+</blockquote>
+
+
+Our variable <i>myCounter</i> started off at 0, which is less than 10, so our while loop executed its code.  The value 0 was printed to the browser and then <i>myCounter</i> was incremented by 1 and the while loop started over again.<hr>
+
+1 was less than 10 so the while loop's code was executed... and the process repeats itself a few more times until...<hr>
+
+<i>myCounter</i> was 10 which was not less than 10 so the while loop's code did not execute.  You can see this in the <i>Display:</i> because the last value to be printed out was 9.<hr>
+
+
+Note:  Advanced programmers may recognize that a <i>for loop</i> would be a better solution for this example, but we hope you can ignore this for our needs to create an easy example!
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

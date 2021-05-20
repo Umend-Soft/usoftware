@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	  <a href="b9.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b11.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 10. Pseudo Classes</h1>
+			
+
+<strong>Pseudo classes</strong> are bolted on to selectors to specify a state or relation to the selector. They take the form of <strong>selector:pseudo class { property: value; }</strong>, simply with a <strong>colon</strong> in between the selector and the pseudo class.<hr><br>
+
+
+
+<div id="antiintro"><div id="ai2">
+
+
+
+Many <abbr title="Cascading Style Sheets">CSS</abbr> proposals are not supported by all browsers, but there are four pseudo classes that can be used safely when applied to links.<hr><br>
+
+
+
+<ul>
+
+<li><strong><code> link</code></strong> is for an unvisited link.</li>
+
+<li><strong><code>visited</code></strong> is for a link to a page that has already been visited.</li>
+
+<li><strong><code>active</code></strong> is for a link when it is gains focus (for example, when it is clicked on).</li>
+
+<li><strong><code>hover</code></strong> is for a link when the cursor is held over it.</li>
+
+</ul>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<pre><code class="css">
+
+a.snowman<strong>:link</strong> {
+
+	color: blue;
+
+}
+
+
+
+a.snowman<strong>:visited</strong> {
+
+	color: purple;
+
+}
+
+
+
+a.snowman<strong>:active</strong> {
+
+	color: red;
+
+}
+
+
+
+a.snowman<strong>:hover</strong> {
+
+	text-decoration: none;
+
+	color: blue;
+
+	background-color: yellow;
+
+}
+
+</code></pre>
+
+</blockquote>
+
+<div class="note">
+
+Although CSS gives you control to bypass it, maintaining different colours for visited links is good practice as many users still expect this. As pseudo classes (other than <code>hover</code>) are not often used, this is a feature that is unfortunately not as common as it once was. Because of this, it is less important than it used to be, but if you are looking for the optimum user response, then you <em>should</em> use it.<hr><br>
+
+Traditionally, text links were <strong>blue</strong> if not visited and <strong>purple</strong> if visited, and there is still reason to believe that these are the most effective colours to use, although, again, with the increasingly widespread use of CSS, this is becoming less commonplace and the average user no longer assumes that links must be blue or purple.<hr><br>
+
+</div>
+
+
+
+	<div class="note"></div>
+
+	You should also be able to use the <code>hover</code> pseudo class with elements other than links. Unfortunately, Internet Explorer doesn't support this method. This is a bloody irritation because there are lots of nice little tricks you can do that look delightful in other browsers.</div></div>
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c32.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c34.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 33. Advanced - getElementById</h1>
+				  
+				  
+<h2>JavaScript getElementById</h2>
+Have you ever tried to use JavaScript to do some form validation?  Did you have any trouble using JavaScript to grab the value of your text field?  There's an easy way to access any HTML element, and it's through the use of <i>id</i> attributes and the <i>getElementById</i> function.<hr>
+
+
+<h2>JavaScript document.getElementById</h2>
+If you want to quickly access the value of an HTML input give it an <i>id</i> to make your life a lot easier.  This small script below will check to see if there is any text in the text field "myText".  The argument that <i>getElementById</i> requires is the <i>id</i> of the HTML element you wish to utilize.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+function notEmpty(){
+	var myTextField = <font color='red'>document.getElementById('myText')</font>;
+	if(myTextField.value != "")
+		alert("You entered: " + myTextField.value)
+	else
+		alert("Would you please enter some text?")		
+}
+&lt;/script&gt;
+&lt;input type='text' <font color='red'>id='myText'</font> /&gt;
+&lt;input type='button' onclick='notEmpty()' value='Form Checker' /&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<script TYPE="text/javascript">
+function notEmpty(){
+	var myTextField = document.getElementById('myText');
+	if(myTextField.value != "")
+		alert("You entered: " + myTextField.value)
+	else
+		alert("Would you please enter some text?")		
+}
+</script>
+<INPUT  TYPE="text" ID="myText"/>
+<INPUT  TYPE="button" ONCLICK="notEmpty()" VALUE="Form Checker"/>
+</blockquote>
+
+<i>document.getElementById</i> returned a reference to our HTML element <i>myText</i>.  We stored this reference into a variable, <i>myTextField</i>, and then used the <i>value</i> property that all input elements have to use to grab the value the user enters.<hr>
+
+There are other ways to accomplish what the above script does, but this is definitely a straight-forward and browser-compatible approach.<hr>
+
+<h2>Things to Remember About getElementById</h2>
+When using the <i>getElementById</i> function, you need to remember a few things to ensure that everything goes smoothly.  You always need to remember that <i>getElementById</i> is a method (or function) of the <i>document</i> object.  This means you can only access it by using <i>document.getElementById</i>.<hr>
+
+Also, be sure that you set your HTML elements' id attributes if you want to be able to use this function.  Without an id, you'll be dead in the water.<hr> 
+
+If you want to access the text within a non-input HTML element, then you are going to have to use the <i>innerHTML</i> property instead of <i>value</i>.  The next lesson goes into more detail about the uses of <i>innerHTML</i>.
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

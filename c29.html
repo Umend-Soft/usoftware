@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c28.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c30.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 29. String - Search</h1>
+				  
+				  
+<h2>JavaScript String Search</h2>
+Knowing if something is or isn't in a string can be very important. If you have an online forum and don't want people to be able to create usernames that include swear words, you can use the search function to find bad words in usernames and reject them if any were found.<hr>
+
+
+<h2>String Search Function</h2>
+This string function takes a regular expression and then examines that string to see if there are any matches for that expression. If there is a match , it will return the position in the string where the match was found.  If there isn't a match, it will return -1. We won't be going into great depth about regular expressions, but we will show you how to search for words in a string.<hr>
+
+<h2>Search Function Regular Expression</h2>
+The most important thing to remember when creating a regular expression is that it must be surrounded with slashes <i>/regular expression/</i>.
+With that knowledge let's search a string to see if a common name "Alex" is inside it.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+<font color='red'>var myRegExp = /Alex/;</font>
+var string1 = "Today John went to the store and talked with Alex.";
+<font color='red'>var matchPos1 = string1.search(myRegExp);</font>
+
+if(matchPos1 != -1)
+	document.write("There was a match at position " + matchPos1); 
+else
+	document.write("There was no match in the first string");
+
+	
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  There was a match at position 45
+</blockquote>
+
+Notice that our regular expression was just the name "Alex". The search function then used this name to see if "Alex" existed in <i>string1</i>. A match was found, and the position of the match (45), was returned.<hr>
+
+<h2>String Search Function: Alternative Searches</h2>
+Another basic tool for regular expressions is the pipe character "|" (it's below the Backspace key on standard keyboards) which allows you to search for alternative words /RegExp1|RegExp2/. Instead of just searching for just one word, we can now use the pipe character to search for multiple words.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var myRegExp = <font color='red'>/Alex|John/</font>;
+var string1 = "Today John went to the store and talked with Alex.";
+var matchPos1 = string1.search(myRegExp);
+
+if(matchPos1 != -1)
+	document.write("There was a match at position " + matchPos1); 
+else
+	document.write("There was no match in the first string");
+
+	
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  There was a match at position 6
+</blockquote>
+
+Notice that our regular expression had two names: Alex and John. The search function then used these names to try to find the first occurrence in the string <i>string1</i>. John came before Alex in our string, so its position (6), was returned.<hr>
+
+Let's look at a couple more advanced examples.<hr>
+
+<h2>Advanced Search Function Examples</h2>
+The following examples play around with the names a little so you can clearly see how the search function operates.<hr>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var myRegExp1 = <font color='red'>/Tom|Jan|Alex/</font>;
+var string1 = "John went to the store and talked with <font color='red'>Alexandra today</font>.";
+var matchPos1 = string1.search(myRegExp1);
+
+if(matchPos1 != -1)
+	document.write("The first string found a match at " + matchPos1);
+else
+	document.write("No match was found in the first string"); 
+
+var myRegExp2 = /Tom|Jan|<font color='red'>Alex /</font>;
+var string2 = "John went to the store and talked with Alexandra today.";
+var matchPos2 = string2.search(myRegExp2);
+if(matchPos2 != -1)
+	document.write("&lt;br /&gt;The second string found a match at " + matchPos2); 
+else
+	document.write("&lt;br /&gt;No match was found in the second string");
+	
+var myRegExp3 = /Tom|Jan|<font color='red'>Alexandra</font>/;
+var string3 = "John went to the store and talked with Alexandra today.";
+var matchPos3 = string3.search(myRegExp3);
+if(matchPos3 != -1)
+	document.write("&lt;br /&gt;The third string found a match at " + matchPos3); 
+else
+	document.write("&lt;br /&gt;No match was found in the third string");
+
+var myRegExp4 = /Tom|Jan|Alexandra/;
+var string4 = "John went to the store and talked with <font color='red'>Alex</font> today.";
+var matchPos4 = string4.search(myRegExp4);
+if(matchPos4 != -1)
+	document.write("&lt;br /&gt;The fourth string found a match at " + matchPos4); 
+else
+	document.write("&lt;br /&gt;No match was found in the fourth string");
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  The first string found a match at 39
+  <br>No match was found in the second string
+  <br>The third string found a match at 39
+  <br>No match was found in the fourth string
+</blockquote>
+
+In the first search, a match was found.  This is because our search didn't specify that the name had to be exactly Alex, and because the name Alexandra contains "Alex", a match was found. <hr>
+
+In the second search, we fixed this by adding a space after the name Alex to make our search for "Alex ", and no match was found.<hr>
+In the third search, we changed our expression to include "Alexandra" and found a match.<hr>
+In the fourth and final search, we changed our string to include "Alex" and we didn't find a match.
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

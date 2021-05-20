@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c17.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c19.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 18. Confirm</h1>
+				  
+<h2>JavaScript Confirm</h2>
+The JavaScript <i>confirm</i> function is very similar to the JavaScript <i>alert</i> function.  A small dialogue box pops up and appears in front of the web page currently in focus.  The confirm box is different from the alert box.  It supplies the user with a choice; they can either press OK to confirm the popup's message or they can press cancel and not agree to the popup's request.<hr>
+
+Confirmation are most often used to <i>confirm</i> an important actions that are taking place on a website. For example, they may be used to confirm an order submission or notify visitors that a link they clicked will take them to another website.<hr>
+
+<h2>JavaScript Confirm Example</h2>
+Below is an example of how you would use a confirm dialogue box to warn users about something, giving them the option to either continue on or stay put.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>HTML &amp; JavaScript Code:</h2><pre class='code'>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+function confirmation() {
+	<font color='red'>var answer = confirm("Leave ")</font>
+	if (answer){
+		alert("Bye bye!")
+		window.location = "http://www.google.com/";
+	}
+	else{
+		alert("Thanks for sticking around!")
+	}
+}
+//--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form&gt;
+&lt;input type="button" onclick="confirmation()" value="Leave "&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<script TYPE="text/javascript">
+<!--
+function confirmation() {
+var answer = confirm("Leave ?")
+if (answer){
+alert("Bye bye!")
+window.location = "http://www.google.com/";
+}
+else{
+alert("Thanks for sticking around!")
+}
+}
+//-->
+</script>
+<form><br />
+<INPUT  ALIGN="center" TYPE="button" ONCLICK="confirmation()" VALUE="Leave"/>
+</form>
+</blockquote>
+Note the part in red. This is where all the magic happens.  We call the confirm function with the message, "Leave Tizag?". JavaScript then makes a popup window with two choices and will return a value to our script code depending on which button the user clicks.<hr>
+If the user clicks OK, a value of 1 is returned.  If a user clicks cancel, a value of 0 is returned..  We store this value in <i>answer</i> by setting it equal to the <i>confirm</i> function call.<hr>
+After <i>answer</i> has stored the value, we then use <i>answer</i> as a conditional statement. If <i>answer</i> is anything but zero, then we will send the user away from Tizag.com. If <i>answer</i> is equal to zero, we will keep the user at Tizag.com because they clicked the Cancel button. <hr>
+
+In either case, we have a JavaScript alert box that appears to inform the user on what is going to happen. It will say, "Bye bye!" if they choose to leave and, "Thanks for sticking around!" if they choose to stay.<hr>
+In this lesson, we also used the <i>window.location</i> property for the first time.  Whatever we set <i>window.location</i> to will be where the browser is redirected to.  In this example, we chose Google.com. We will discuss redirection in greater detail later on.
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style.css" />
+  </head> 
+  <body> 
+	<header>Learn HTML</header>
+
+	<div>
+
+	<a href="a15.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="a.html"><img src="icon/a.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="a17.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Html - 16. Frames</h1>
+				  
+<h2>HTML Frames</h2>
+Frames allow for multiple ".html" documents to be displayed inside of one browser window at a time. 
+This means that one page has no content on it, but rather tells the browser which web pages you would like to open. 
+With the addition of CSS and PHP, frames have become outdated, but if you wish to use them, read on.
+<hr>
+
+With frames, you can display more than one HTML document in the same browser
+window. Each HTML document is called a frame, and each frame is independent of
+the others.<hr>
+
+
+The disadvantages of using frames are:<hr>
+
+
+<ul>
+  <li>Frames are not expected to be supported in future versions of HTML</li>
+  <li>Frames are difficult to use. (Printing the entire page is difficult).</li>
+	<li>The web developer must keep track of more HTML documents</li>
+</ul>
+<hr />
+
+<h2>The HTML frameset Element</h2>
+The frameset element holds one or more frame elements. Each frame element 
+can hold a separate document.<hr>
+
+The frameset element states HOW MANY columns or rows there will be in the 
+frameset, and HOW MUCH percentage/pixels of space will occupy each of them.<hr>
+
+<hr />
+<h2>The HTML frame Element</h2>
+The &lt;frame&gt; tag defines one particular window (frame) within a frameset.<hr>
+
+In the example below we have a frameset with two columns.<hr>
+
+The first column is
+set to 25% of the width of the browser window. The second column is set to 75%
+of the width of the browser window. The document &quot;frame_a.htm&quot; is
+put into the first column, and the document &quot;frame_b.htm&quot; is put
+into the second column:<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+&lt;frameset cols=&quot;25%,75%&quot;&gt;<br />
+&nbsp;&nbsp; &lt;frame src=&quot;frame_a.htm&quot; /&gt;<br />
+&nbsp;&nbsp; &lt;frame src=&quot;frame_b.htm&quot; /&gt;<br />
+&lt;/frameset&gt;
+</blockquote>
+<b>Note:</b> The frameset column size can also be set in pixels 
+(cols=&quot;200,500&quot;), and one of the columns can be set to use the remaining space, 
+with an asterisk 
+(cols=&quot;25%,*&quot;).<br />
+<hr>
+
+<hr />
+
+<h2>Basic Notes - Useful Tips</h2>
+
+<b>Tip:</b> If a frame has visible borders, the user can resize it by dragging
+the border. To prevent a user from doing this, you can add noresize=&quot;noresize&quot; to
+the &lt;frame&gt; tag.<hr>
+
+
+<b>Note:</b> Add the &lt;noframes&gt; tag for browsers that do not
+support frames.<hr>
+
+<b>Important:</b> You cannot use the &lt;body&gt;&lt;/body&gt; tags together with the 
+&lt;frameset&gt;&lt;/frameset&gt; tags! However, if you add a &lt;noframes&gt; tag containing some 
+text for browsers that do not support frames, you will have to enclose the text 
+in &lt;body&gt;&lt;/body&gt; tags! See how it is done in the first example below.<hr>
+
+Frames can be simple and well organized. However, they are usually viewed as unacceptable by most web designers.<br>
+Always set the scrolling and resize options to optimize loadtime.<Br>
+Using a simple menu/content frame design can reduce updates to massive sites.<Br>
+ Instead of updating the menu on each page, you could simply update the menu.html file and be done with it!
+		
+      <h3>Learn HTML</h3>  
+
+    </div>      
+
+  </body>
+</html>

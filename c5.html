@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c4.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c6.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 5. External</h1>
+				  
+<h2>External JavaScript Files</h2>
+Having already discussed placing JavaScript in the <i>head</i> and <i>body</i> of your HTML document, let us now explore the third possible location type -- an external file.  If you have ever used external CSS before, this lesson will be a cinch.<hr>
+
+<h2>Importing an External JavaScript File</h2>
+Importing an external file is relatively painless. First, the file you are importing must be valid JavaScript, and <b>only</b> JavaScript.  Second, the file must have the file extension ".js".  Lastly, you must know the location of the file.<hr>
+Let us assume we have a file "myjs.js" that contains a one line Hello World alert function.  Also, let us assume that the file is the same directory as the HTML file we are going to code up.  To import the file you would do the following in your HTML document.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 >File myjs.js Contents:</h2>
+function popup() {
+alert("Hello World")
+}
+</blockquote>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2>HTML &amp; JavaScript Code:</h2>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script src="myjs.js"&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;input type="button" onclick="popup()" value="Click Me!"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</blockquote>
+
+
+<h2 class='specialT'>Display:</h2><div class='display'>
+<INPUT  TYPE="button" ONCLICK="popup()" VALUE="Click Me!"/>
+</div>
+
+<h2>Great JavaScript Repositories</h2>
+There is a ton of great stuff you can do with JavaScript, if you know how to code like Paul Allen and Bill Gates, but for the rest of us, it is nice to get incredible JavaScript tools without having to write them ourselves.  Below are some of the better JavaScript resources on the web these days.<hr>
+<ul>
+	<li><a HREF="http://www.javafile.com/" TARGET="_blank">JavaFile.com</a></li>
+	<li><a HREF="http://www.java-scripts.net/" TARGET="_blank">Java-Scripts.com</a></li>
+	<li><a HREF="http://dhtml-menu.com/" TARGET="_blank">Drop Down JavaScript Menus</a></li>
+</ul>
+<h2>External File Tips &amp; Recap</h2>
+<ul>
+	<li>Use external JavaScript files when you want to use the same script on many pages, but don't want to have to rewrite the code on every page!</li>
+	<li>Use external JavaScript files for including both types of scripts: the type that you place	in the <i>head</i> (functions) and the type you place in the <i>body</i> (scripts you want to run when the page loads).</li>
+	<li>Be sure that your JavaScript files (.js) do not include the &lt;script&gt; tag. They should only contain HTML commenting and JavaScript code -- nothing more!</li>
+</ul>
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

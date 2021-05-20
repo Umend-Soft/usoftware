@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c22.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c24.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 23. Date</h1>
+				  
+				  
+<h2>JavaScript Date and Time Object</h2>
+
+The Date object is useful when you want to display a date or use a timestamp in some sort of calculation.  In Java, you can either make a Date object by supplying the date of your choice, or you can let JavaScript create a Date object based on your visitor's system clock.  It is usually best to let JavaScript simply use the system clock.<hr>
+
+
+When creating a Date object based on the computer's (not web server's!) internal clock, it is important to note that if someone's clock is off by a few hours or they are in a different time zone, then the Date object will create a different times from the one created on your own computer.<hr>
+
+<h2>JavaScript Date Today (Current)</h2>
+To warm up our JavaScript Date object skills, let's do something easy. If you do not supply any arguments to the Date constructor (this makes the Date object) then it will create a Date object based on the visitor's internal clock.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>HTML &amp; JavaScript Code:</h2><pre class='code'>
+&lt;h4&gt;It is now  
+&lt;script type="text/javascript"&gt;
+&lt;!--
+var currentTime = new Date()
+//--&gt;
+&lt;/script&gt;
+&lt;/h4&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><div class='display'>
+<h4>It is now</h4>
+</div>
+
+Nothing shows up!  That's because we still don't know the methods of the Date object that let us get the information we need (i.e. Day, Month, Hour, etc).
+<hr>
+
+<h2>Get the JavaScript Time</h2>
+The Date object has been created, and now we have a variable that holds the current date!  To get the information we need to print out, we have to utilize some or all of the following functions:<hr>
+
+<ul>
+	<li><b>getTime()</b> - Number of milliseconds since 1/1/1970 @ 12:00 AM</li>
+	<li><b>getSeconds()</b> - Number of seconds (0-59)</li>
+	<li><b>getMinutes()</b> - Number of minutes (0-59)</li>
+	<li><b>getHours()</b> - Number of hours (0-23)</li>
+	<li><b>getDay()</b> - Day of the week(0-6).  0 = Sunday, ... , 6 = Saturday</li>
+	<li><b>getDate()</b> - Day of the month (0-31)</li>
+	<li><b>getMonth()</b> - Number of month (0-11)</li>
+	<li><b>getFullYear()</b> - The four digit year (1970-9999)</li>
+</ul>
+Now we can print out the date information.  We will be using the  <i>getDate</i>, <i>getMonth</i>, and <i>getFullYear</i> methods in this example.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>HTML &amp; JavaScript Code:</h2><pre class='code'>
+&lt;h4&gt;It is now  
+&lt;script type="text/javascript"&gt;
+&lt;!--
+var currentTime = new Date()
+var month = <font color='red'>currentTime.getMonth() + 1</font>
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+document.write(month + "/" + day + "/" + year)
+//--&gt;
+&lt;/script&gt;
+&lt;/h4&gt;
+
+</pre></blockquote>
+
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  It is now 10/28/2017 !
+</blockquote>
+Notice that we added 1 to the <i>month</i> variable to correct the problem with January being 0 and December being 11.  After adding 1, January will be 1, and December will be 12.<hr>
+
+
+
+<h2>JavaScript Current Time Clock</h2>
+Now, instead of displaying the date we, will display the format you might see on a typical digital clock -- HH:MM AM/PM (H = Hour, M = Minute).<hr>
+
+
+
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  It is now 22:53 PM
+</blockquote>
+
+Above, we check to see if either the <i>hours</i> or <i>minutes</i> variable is less than 10. If it is, then we need to add a zero to the beginning of minutes.  This is not necessary, but if it is 1:01 AM, our clock would output "1:1 AM", which doesn't look very nice at all!
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

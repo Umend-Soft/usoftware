@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c26.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c28.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 27. String - Length</h1>
+				 
+				  
+<h2>JavaScript String Length</h2>
+Advanced scripters will often need to know how long a JavaScript string is.  For example, if a webdeveloper was creating a submission form that required the username to be no longer than 20 characters, then she would need to check the length of the string before allowing the user to submit data.<hr>
+
+
+<h2>String Length Property</h2>
+The <i>length</i> property returns the number of characters that are in a string, using an integer.  Below is the basic code for accessing this property.<hr>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var myString = "123456";
+
+<font color='red'>var length = myString.length;</font>
+
+document.write("The string is this long: " + length);
+
+// Same thing, but using the property inside the write function
+document.write("&lt;br /&gt;The string is this long: " + <font color='red'>myString.length</font>);
+
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  The string is this long: 0
+  <br>The string is this long: 6
+</blockquote>
+
+<h2>String Changed? Length Might Change</h2>
+If you were to reference the <i>length</i> property after concatenating (adding) some characters to the string, then the length property will reflect these changes.  Think of this as a friendly reminder to only check the length of the string after you are sure it isn't going to be changed.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var myString = "123456";
+document.write("The string is this long: " + <font color='red'>myString.length</font>);
+
+myString = myString + "7890";
+document.write("&lt;br /&gt;The string is now this long: " + <font color='red'>myString.length</font>);
+
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  The string is this long: 6
+  The string is now this long: 10
+</blockquote>
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>

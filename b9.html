@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b8.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b10.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 9. Grouping and Nesting</h1>
+
+You can give the same properties to a number of selectors without having to repeat them by separating the selectors by <strong>commas</strong>.<hr><br>
+
+
+
+For example, if you have something like:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+h2 {
+
+	color: red;
+
+}
+
+
+
+.thisOtherClass {
+
+	color: red;
+
+}
+
+
+
+.yetAnotherClass {
+
+	color: red;
+
+}
+
+</code></pre>
+
+</blockquote>
+
+You could make it:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+<strong>h2, .thisOtherClass, .yetAnotherClass</strong> {
+
+	color: red;
+
+}
+
+</code></pre>
+
+
+</blockquote>
+<h2>Nesting</h2>
+
+If the <acronym title="Cascading Style Sheets">CSS</acronym> is structured well, there shouldn't be a need to use many class or ID selectors.
+ This is because you can specify properties to selectors <em>within</em> other selectors.<hr><br>
+
+For example:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="css">
+
+#top {
+
+	background-color: #ccc;
+
+	padding: 1em
+
+}
+
+
+
+<strong>#top h1</strong> {
+
+	color: #ff0;
+
+}
+
+
+
+<strong>#top p</strong> {
+
+	color: red;
+
+	font-weight: bold;
+
+}
+
+</code></pre>
+</blockquote>
+
+
+Removes the need for classes or ID's if it is applied to <abbr title="HyperText Markup Language">HTML</abbr> that looks something like this:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<pre><code class="html">
+
+<strong>&lt;div id="top"&gt;</strong>
+
+
+
+	<strong>&lt;h1&gt;</strong>Chocolate curry<strong>&lt;/h1&gt;</strong>
+
+
+
+	<strong>&lt;p&gt;</strong>This is my recipe for making curry purely with chocolate<strong>&lt;/p&gt;</strong>
+
+
+
+	<strong>&lt;p&gt;</strong>Mmm mm mmmmm<strong>&lt;/p&gt;</strong>
+
+
+
+<strong>&lt;/div&gt;</strong>
+
+</code></pre>
+
+</blockquote>
+
+This is because, by separating selectors with <strong>spaces</strong>, we are saying '<code>h1</code> inside ID <code> top</code> is colour 
+<code>#ff0</code>' and '<a href="/reference/htmltags/p/" class="acode"><code>p</code></a> inside ID <code> top</code> is <code>red</code> and 
+<code>bold</code>'.<hr><br>
+
+This can get quite complicated (because it can go for more than two levels, such as this inside this inside this inside this etc.)
+ and may take a bit of practice.
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

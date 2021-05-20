@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b2.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 1. Applying CSS</h1>
+				  
+<h2>Applying CSS</h2>
+
+CSS Beginner Tutorial
+Like the HTML Beginner Tutorial, the CSS Beginner Tutorial assumes that you know as 
+much about CSS as you do about the cumulative effects of sea squirt discharge on the brain chemistry of Germanic ammonites. The purpose of this guide is to teach the bare essentials - just enough to get started. The CSS Intermediate Tutorial and CSS Advanced Tutorial go into more depth about CSS.<hr><br>
+
+HTML Dog is hosted by Titan Internet
+CSS, or Cascading Styles Sheets, is a way to style HTML. Whereas the HTML is the content, the style sheet is the presentation of that document.
+
+Styles don't smell or taste anything like HTML, they have a format of 'property: value' and most properties can be applied to most HTML tags.<hr><br>
+There are three ways to apply CSS to HTML.<hr><br>
+
+<h2 id="c1">In-line</h2>
+
+<strong>In-line</strong> styles are plonked straight into the HTML tags using the <code >style</code> attribute.<hr><br>
+
+They look something like this:<hr><br>
+
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<strong>&lt;p style="color: red"&gt;text&lt;/p&gt;</strong><br>
+
+</blockquote>
+This will make that specific paragraph red.<hr><br>
+
+But, if you remember, the best-practice approach is that the HTML should be a stand-alone, <strong>presentation free</strong> document, and so in-line styles should be avoided wherever possible.<hr><br>
+
+<h2>Internal</h2>
+
+Embedded, or <strong>internal</strong> styles are used for the whole page. Inside the head tags, the style tags surround all of the styles for the page.<hr><br>
+
+This would look something like this:<hr><br>
+
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"<br>
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;<br>
+
+&lt;html&gt; <br>
+
+&lt;head&gt; <br>
+
+&lt;title&gt; CSS Example &lt;/title&gt; <br>
+
+<strong>&lt;style  type="text/css"&gt;</strong><br>
+
+	<strong>p {</strong><br>
+
+		<strong>color: red;</strong><br>
+
+	<strong>}</strong><br>
+<br>
+
+
+	<strong>a {</strong><br>
+
+		<strong>color: blue;</strong><br>
+
+	<strong>}</strong><br><br>
+
+<strong>&lt;/style&gt;</strong><br>
+
+...
+
+</blockquote>
+
+
+
+This will make all of the paragraphs in the page red and all of the links blue.<hr><br>
+
+
+
+Similarly to the in-line styles, you should keep the HTML and the CSS files separate, and so we are left with our saviour...<hr><br>
+
+
+
+<h2>External</h2>
+
+<strong>External</strong> styles are used for the whole, multiple-page website. There is a <strong>separate CSS file</strong>, which will simply look something like:<hr><br>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+<strong>p {</strong>
+
+	<strong>color: red;</strong>
+
+<strong>}</strong><br>
+
+
+
+<strong>a {</strong>
+
+	<strong>color: blue;</strong>
+
+<strong>}</strong><br>
+
+</blockquote>
+
+
+
+If this file is saved as "web.css" then it can be linked to in the HTML like this:<hr><br>
+
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;<br>
+
+&lt;html&gt;<br>
+
+&lt;head&gt;<br>
+
+	&lt;title&gt;CSS Example&lt;/title&gt;<br>
+
+	<strong>&lt;link rel="stylesheet" type="text/css" href="web.css" /&gt;</strong><br>
+
+...
+
+</blockquote>
+
+
+
+In the CSS Advanced Tutorial, we will see that there are other ways of linking external style sheets, but this will suffice for now. 
+
+
+
+To get the most from this guide, it would be a good idea to try out the code as we go along, so start a fresh new file with your text-editor and save the blank document as "web.css" in the same directory as your HTML file.<hr><br>
+
+Now change your HTML file so that it starts something like this:<hr><br>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"<br>
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;<br>
+
+
+
+&lt;html&gt;<br>
+
+
+
+&lt;head&gt;<br>
+
+	&lt;title&gt;My first web page&lt;/title&gt;<br>
+
+	<strong>&lt;link rel="stylesheet" type="text/css" href="web.css" /&gt;</strong><br>
+
+&lt;/head&gt;<br>
+
+...
+
+</blockquote>
+
+
+
+Save the HTML file. This now links to the CSS file, which is empty at the moment, so won't change a thing. As you work your way through the CSS Beginner Tutorial, you will be able to add to and change the CSS file and see the results by simply refreshing the browser window that has the HTML file in it, as we did before.
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

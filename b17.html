@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style1.css" />
+  </head> 
+  <body> 
+	<header>Learn CSS</header>
+
+	<div>
+
+	<a href="b16.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="b.html"><img src="icon/b.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="b18.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>CSS - 17. Specificity</h1>
+				 
+
+If you have two (or more) conflicting CSS rules that point to the same element, there are some basic rules that a browser follows to determine which one is most <strong>specific</strong> and therefore wins out.<hr><br>
+It may not seem like something that important, and in most cases you won't come across any conflicts at all, but the larger and more complex your CSS files become, or the more CSS files you start to juggle with, the greater likelihood there is of conflicts turning up.<hr><br>
+
+
+
+If the selectors are the same then the latest one will always take precedence. For example, if you had:<hr><br>
+
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+<pre><code class="css">
+
+p { color: red; }
+
+p { color: blue; }</code></pre>
+
+</blockquote>
+
+<code>p</code> elements would be coloured blue because that rule came last.<hr><br>
+
+
+
+However, you won't usually have identical selectors with conflicting declarations on purpose (because there's not much point). Conflicts quite legitimately come up, however, when you have nested selectors. In the following example:<hr><br>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+
+
+<pre><code class="css">
+
+div p { color: red; }
+
+p { color: blue; }
+
+</code></pre>
+
+</blockquote>
+
+It might seem that <code>p</code> elements <em>within a <code>div</code> element</em> would be coloured blue, 
+seeing as a rule to colour <code>p</code>elements blue comes last, but they would actually be coloured red due to the specificity of the first selector. 
+Basically, the more specific a selector, the more preference it will be given when it comes to conflicting styles.<hr><br>
+
+
+
+The actual specificity of a group of nested selectors takes some calculating. Basically, you give every id selector ("#whatever") a value of 100, every class selector (".whatever") a value of 10 and every HTML selector ("whatever") a value of 1. Then you add them all up and hey presto, you have the specificity value.<hr><br>
+
+
+
+<ul>
+
+<li><code >p</code> has a specificity of 1 (1 HTML selector)</li>
+
+<li><code>div p</code> has a specificity of 2 (2 HTML selectors; 1+1)</li>
+
+<li><code>.tree</code> has a specificity of 10 (1 class selector)</li>
+
+<li><code>div p.tree</code> has a specificity of 12 (2 HTML selectors and a class selector; 1+1+10)</li>
+
+<li><code>#baobab</code> has a specificity of 100 (1 id selector)</li>
+
+<li><code>body #content .alternative p</code> has a specificity of 112 (HTML selector, id selector, class selector, HTML selector; 1+100+10+1)</li>
+
+</ul>
+
+
+
+So if all of these examples were used, <code>div p.tree</code> (with a specificity of 12) would win out over <code>div p</code> (with a specificity of 2) and <code>body #content .alternative p</code> would win out over all of them, <em>regardless of the order</em>.
+		
+      <h3>Learn CSS</h3>  
+
+    </div>      
+
+  </body>
+</html>

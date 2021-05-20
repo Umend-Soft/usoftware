@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>Learn</title>  
+	<link rel="stylesheet" href="css/style2.css" />
+  </head> 
+  <body> 
+	<header>Learn Javascript</header>
+
+	<div>
+
+	<a href="c30.html"><img src="icon/back.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+					
+				  <a href="c.html"><img src="icon/c.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="20" height="15" />
+				  
+				  
+				  <a href="index.html"><img src="icon/home.png" width="35" height="35" /></a>
+				  <img src="icon/0.png" width="50" height="15" />
+				  
+				  
+				  
+				  <a href="c32.html"><img src="icon/next.png" width="35" height="35" /></a>
+				  				  
+
+				  <h1>Javascript - 31. String - indexOf</h1>
+				 
+				  
+<h2>JavaScript String indexOf</h2>
+Ever want to find something in one of your JavaScript strings? Maybe even start your search halfway through the string? Well you're in luck!  The string function <i>indexOf</i> lets you supply one required argument (the search query) and one optional argument (the offset) for all your simple searching needs.<hr>
+
+
+If you are looking for a more powerful search feature, you should check out JavaScript's string search function, which has support for regular expressions, but not offsets.<hr>
+
+<h2>String indexOf Function</h2>
+As we mentioned above, <i>indexOf</i> has two arguments, with the second one being optional:<hr>
+<ol>
+	<li>SearchString - What you would like to search for.</li>
+	<li>Offset (optional) - How far into the string you would like the search to begin. If you want to search the whole string, omit this argument.</li>
+</ol>
+
+
+<h2>indexOf Function Example</h2>
+To start off with, we will be finding the position of the "www" in a typical URL string.  The <i>indexOf</i> function will return the location of the first match that it encounters.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var aURL = "http://www.google.com/";
+var aPosition = aURL.<font color='red'>indexOf("www");</font>
+
+document.write("The position of www  =  " + aPosition); 
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  The position of www = 7
+</blockquote>
+
+If you'd like to follow along with how this function does it's counting, here's a complete breakdown:<hr>
+<ul>
+	<li>h - 0 - no match</li>
+	<li>t - 1 - no match</li>
+	<li>t - 2 - no match</li>
+	<li>p - 3 - no match</li>
+	<li>: - 4 - no match</li>
+	<li>/ - 5 - no match</li>
+	<li>/ - 6 - no match</li>
+	<li>w - 7 - maybe match</li>
+	<li>w - 8 - maybe match</li>
+	<li>w - 9 - It's a match, return the position of the start of the match (7).</li>
+</ul>
+
+Let's see what happens when we add another www to the URL string to see if this function gets confused or not.<hr>
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var aURL = "http://www.google.com/<font color='red'>www.html</font>";
+var aPosition = aURL.indexOf("www");
+
+document.write("The position of www  =  " + aPosition); 
+
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  The position of www = 7
+</blockquote>
+
+Looks like it returned the position of the first "www", just as we expected, so there are no surprises in this function. However, what would we do if we wanted to find the second "www"? Well, we'd have to use an offset, for starters.<hr>
+
+<h2>indexOf Function Offset Example</h2>
+If we use the <i>indexOf</i> function to find the first "www", then we can use that position + 1 as a way to skip the first "www" and find the second.<hr>
+
+<blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;"><h2 class='specialT'>JavaScript Code:</h2><pre class='code'>
+&lt;script type="text/javascript"&gt;
+var aURL = "http://www.google.com/www.html";
+var aPosition = aURL.indexOf("www");
+<font color='red'>var secondPos = aURL.indexOf("www", aPosition + 1);</font>
+
+document.write("The position of www  =  " + aPosition); 
+<font color='red'>document.write("&lt;br /&gt;The position of the second www  =  " + secondPos); </font>
+
+&lt;/script&gt;
+</pre></blockquote>
+
+<h2 class='specialT'>Display:</h2><blockquote style="background-color:#F0FFFF;padding:5px 5px 5px 5px;">
+  The position of www = 7
+  <br>The position of the second www = 22
+</blockquote>
+
+By using an offset of 8 (7 + 1), we were able to skip the first "www" to instead find the second.  In case you're interested in what the function was actually looking at after we gave an offset, we have it below:<hr>
+<ul>
+	<li>ww.google.com/www.html</li>
+</ul>
+
+There are only 2 w's left at the beginning of the string, due to the offset, making it impossible for a match to be found at the first set of "www".
+		
+      <h3>Learn Javascript</h3>  
+
+    </div>      
+
+  </body>
+</html>
